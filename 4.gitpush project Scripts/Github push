@@ -51,4 +51,20 @@ Ex:- D:\Django-Interview-Quetion>git add .
 #  python3 --version   output:- 3.12.3
 
 
+1. Option 1: Safe Merge (Recommended for Teams)
+Agar aap chahte hain ki GitHub par jo extra files hain wo delete na hon, balki wo aapke local computer par aa jayen aur mix ho jayen:
 
+bash
+git pull --rebase origin main ****
+git push origin main
+Kaam: Ye pehle GitHub se naye changes layega (pull), unko aapke changes ke neeche lagayega (rebase), aur fir sab kuch wapas bhejega (push).
+Problem: Kabhi-kabhi isme "Conflict" aa jata hai agar same line par alag-alag changes hon.
+2. Option 2: Force Push (Winner for You 🏆)
+Kyunki aapne kaha ki aapne code pura set kar liya hai aur aapka local code hi final hai, to ye command GitHub ko force karegi ki "Mera local code hi sahi hai, baaki sab bhul jao".
+
+bash
+git push -f origin main   *****
+Kaam: Ye GitHub ki purani history ko overwrite kar dega aur aapke local folder ko exact copy bana dega wahan.
+Fayda: Koi conflict nahi aayega, sab kuch clean rahega. medical_chromadb, 
+README.md
+ sab wahi hoga jo aapke paas abhi hai.
