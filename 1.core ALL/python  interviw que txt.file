@@ -64,8 +64,8 @@ syntex :-  def function name (parameters): #colum
 
 Q-12 what is__init__?
 
-its a constuctor in python aumatcally run, isko dunder method bhi kaha jata hai sab se pehle ye excute hoga hamare program me 
-Example deskte hai isme hum :-  
+its a constuctor in python aumatcally run, isko dunder method bhi kaha jata hai Isliye __init__ program me sabse pehle nahi,balki object create karte hi run hota hai. 
+Example dekhte hai isme hum :-  
 # constouctor
 # class fruit:
 #     def __init__(self):
