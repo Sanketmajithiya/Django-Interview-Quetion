@@ -130,7 +130,7 @@ class Parent:
     def __init__(self):
         self.name = "sanket"   # Public   #self.name sab jagah access ho sakta hai.
 
-protected :- _init_ access kar sakte (class ke under use kar sakte hai (chiled ) class bana kar)
+protected :- access kar sakte (class ke under use kar sakte hai (chiled ) class bana kar)
 Ex:- 
 class Parent:
     def __init__(self):
