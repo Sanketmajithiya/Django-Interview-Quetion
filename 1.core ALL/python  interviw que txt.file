@@ -93,6 +93,7 @@ Q-15 pakages in python
 
 Ans:- collection of module files 
 
+methods:- for list,tuple,set,dict,string
 []           {}             ()             {}
 list :-|    dict:-     |  tuple:-     |   set:-  
 append,|    get        |  count       |   frozen set (woh immutable hojayega, values change nahi kar sakte fir) set is mutable.
@@ -173,7 +174,7 @@ Another Ex:- (module)
 enacapsulation :- behind the scenes user ko nahi dikhe gaa Hum ne to Direct import kiya  or use kiya 
 >>>>>>>>>>>>>>>>> --------- >>>>>>>>>>>>>>>>
 
-module EX:- math,time,random,module,datetime,abc,copy,decimal,json,os,oprater,time,sys,threding,zipfile,uuid
+module EX:- math,time,random,module,datetime,abc,copy,decimal,json,os,oprater,sys,threding,zipfile,uuid
 
 pakages EX:- pygame,DjangoREST framwork,FastAPI,celery,scrapy
 
