@@ -174,7 +174,7 @@ Another Ex:- (module)
 enacapsulation :- behind the scenes user ko nahi dikhe gaa Hum ne to Direct import kiya  or use kiya 
 >>>>>>>>>>>>>>>>> --------- >>>>>>>>>>>>>>>>
 
-module EX:- math,time,random,module,datetime,abc,copy,decimal,json,os,oprater,sys,threding,zipfile,uuid
+module EX:- math,time,random,module,datetime,json,os,oprater,sys,threding,zipfile,uuid,abc(Abstract Base Class),copy,decimal
 
 pakages EX:- pygame,DjangoREST framwork,FastAPI,celery,scrapy
 
