@@ -124,11 +124,41 @@ rstrip
 
 
 Q-16 name-mengling concepts inharitance 
-privet public :- __init__ access nahi kar sakte  
-
-protected :- _init_ access kar sakte (class ke under use kar sakte hai (chiled ) class bana kar )
-
 public:- all access kar sakte hai
+Ex public:- 
+class Parent:
+    def __init__(self):
+        self.name = "sanket"   # Public   #self.name sab jagah access ho sakta hai.
+
+protected :- _init_ access kar sakte (class ke under use kar sakte hai (chiled ) class bana kar)
+Ex:- 
+class Parent:
+    def __init__(self):
+        self._age = 20   # Protected
+✔ Class ke andar use kar sakte hai
+✔ Child class bana kar bhi access kar sakte hai
+
+privet :- direct access nahi kar sakte  (isme class name and variable dono use hota access ke liye)
+Python name mangling karta hai aur internally naam _ClassName__variable ho jata hai.
+Private member (__variable) ko direct access nahi kar sakte kyunki Python name mangling karke uska naam _ClassName__variable bana deta hai.
+Ex:- 
+class Parent:
+    def __init__(self):
+        self.__salary = 50000   # Private
+
+Acees:- 
+obj = Parent()
+print(obj.__salary)  # ❌ Error: AttributeError   
+
+True:- print(obj._Parent__salary)  # ✅ Output: 50000
+
+
+| Access Modifier | Syntax          | Naming Convention      | Access Level                               |
+| --------------- | --------------- | ---------------------- | ------------------------------------------ |
+| **Public**      | `self.name`     | No underscore          | Sab jagah access possible                  |
+| **Protected**   | `self._age`     | Single underscore `_`  | Class & child classes ke liye (convention) |
+| **Private**     | `self.__salary` | Double underscore `__` | Direct access nahi, name mangling hota hai |
+
 
 * What is module
 module :- python file containg statement(iske under multiple classes ,functions,variables unki collection iss Tarike se strore ki Huvi hai) Taaki hume Advantages mil sake joo kaam same kare usko sath me daal sake 
