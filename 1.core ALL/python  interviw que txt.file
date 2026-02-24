@@ -10,7 +10,7 @@ dynamic (6) high level (7) portable (8) extensible (9) readable and  python ko s
 
 Q-2 what is python keyword 
 
-Ans:- in python keyword are resver keyword not in function , variable , identifier
+Ans:- in python keyword are resver keyword and cannot be used as a variable,function,identifier
 
 like:- true , false, if, else, not, def ,is, for,None,class,from,import
           
