@@ -175,12 +175,14 @@ Another Ex:- (module)
 enacapsulation :- behind the scenes user ko nahi dikhe gaa Hum ne to Direct import kiya  or use kiya 
 >>>>>>>>>>>>>>>>> --------- >>>>>>>>>>>>>>>>
 
-module EX:- math,time,random,module,datetime,json,os,operator,sys,threading,zipfile,uuid,abc(Abstract Base Class),copy,decimal
+module EX:- math,time,random,datetime,json,os,operator,sys,threading,zipfile,uuid,abc(Abstract Base Class),copy,decimal
 
-pakages EX:- pygame,DjangoREST framework,FastAPI,celery,scrapy,Beautiful Soup
+pakages EX:- pygame,Django,djangorestframework,FastAPI,celery,scrapy,Beautiful Soup
 
-Library :- Numpy,pandas,flask,request,Django,pillow,pytest,selenium,tensorflow
+Library :- Numpy,pandas,flask,requests,pillow,pytest,selenium,tensorflow
 
-Built-in Functions :-len(),sorted,map,filter,reduce,all,zip,sum,min,max,str,type,input,print
+Built-in Functions :- len(), sorted(), map(), filter(), all(), zip(), sum(), min(), max(), str(), type(), input(), print()
 
 User-defined Functions 
+
+""Pip is a tool to install and manage Python packages; it is not a module, package, or library itself""
