@@ -179,9 +179,9 @@ module EX:- math,time,random,datetime,json,os,operator,sys,threading,zipfile,uui
 
 pakages EX:- pygame,Django,djangorestframework,FastAPI,celery,scrapy,Beautiful Soup
 
-Library :- Numpy,pandas,flask,requests,pillow,pytest,selenium,tensorflow
+Library :- numpy,pandas,flask,requests,pillow,pytest,selenium,tensorflow
 
-Built-in Functions :- len(), sorted(), map(), filter(), all(), zip(), sum(), min(), max(), str(), type(), input(), print()
+Built-in Functions :- len(), sorted(), map(), filter(), reduce(), all(), zip(), sum(), min(), max(), str(), type(), input(), print()
 
 User-defined Functions 
 
