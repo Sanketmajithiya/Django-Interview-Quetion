@@ -92,6 +92,7 @@ contine :- woh itraction ko woh skip kar dega waha se
 Q-15 pakages in python 
 
 Ans:- collection of module files 
+Ek package ek collection of modules ka folder hota hai.
 
 methods:- for list,tuple,set,dict,string
 []           {}             ()             {}
