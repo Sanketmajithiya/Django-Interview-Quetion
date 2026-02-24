@@ -175,11 +175,11 @@ Another Ex:- (module)
 enacapsulation :- behind the scenes user ko nahi dikhe gaa Hum ne to Direct import kiya  or use kiya 
 >>>>>>>>>>>>>>>>> --------- >>>>>>>>>>>>>>>>
 
-module EX:- math,time,random,module,datetime,json,os,oprater,sys,threding,zipfile,uuid,abc(Abstract Base Class),copy,decimal
+module EX:- math,time,random,module,datetime,json,os,operator,sys,threading,zipfile,uuid,abc(Abstract Base Class),copy,decimal
 
-pakages EX:- pygame,DjangoREST framwork,FastAPI,celery,scrapy
+pakages EX:- pygame,DjangoREST framework,FastAPI,celery,scrapy,Beautiful Soup
 
-Library :- Numpy,pandas,flask,request,Django,pillow,pytest,Beautiful Soup
+Library :- Numpy,pandas,flask,request,Django,pillow,pytest,selenium,tensorflow
 
 Built-in Functions :-len(),sorted,map,filter,reduce,all,zip,sum,min,max,str,type,input,print
 
