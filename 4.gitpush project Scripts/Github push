@@ -68,3 +68,56 @@ Kaam: Ye GitHub ki purani history ko overwrite kar dega aur aapke local folder k
 Fayda: Koi conflict nahi aayega, sab kuch clean rahega. medical_chromadb, 
 README.md
  sab wahi hoga jo aapke paas abhi hai.
+
+
+python anywhere:- 
+
+1. Pehle git par new repository bana loo
+2. Dekstop par D drive me new folder create Joo project live karna hai woh files daal do 
+3. open cmd github code link copy http cmd open--> git clone (paste this link)
+step-1
+4.  Aab python Anywhere me jaao fir 👉 https://www.pythonanywhere.com
+
+Login karo.
+
+STEP 2— Bash console open karo
+👉 Consoles
+👉 Start a new console
+👉 Bash
+
+✅ STEP 3 — Project clone karo (GitHub se)
+Agar code GitHub pe hai:
+git clone https://github.com/username/repository.git
+
+✅ STEP 4 — Project folder me jao dir se check kar sakte ho project 
+cd project-folder-name(bird-bidding-app)
+
+✅ STEP 5 — Virtual Environment create karo (VERY IMPORTANT)
+mkvirtualenv myenv --python=python3.10
+
+✅ STEP 6 — Requirements install karo
+Agar requirements.txt hai:
+pip install -r requirements.txt
+
+****Agar nahi hai Requirements to hi other wise isse skip kar dijiye:
+pip install django
+pip install gunicorn
+
+✅ STEP 7 - woh app me jaake Ager .env nahi hai to usse upload kar dijiye Files me jaake App jo ho usme Upload file me ager git ignore se reh gay
+hoto upload file se le lijiye and then consolve me dir che kar ke And make sure Debug= False ho seting yaa .env me samze And then migrate sahi path me jaake
+Ex:- cd ~/bird-bidding-app/bird_bidding_app
+python manage.py migrate
+
+✅ STEP 8. Admin User Banayein
+python manage.py createsuperuser  bird bidding kaa python anywhere super user:-  Admin password:- 12345678
+
+✅ STEP 9 Static Files Collect karein
+But wsgi file me changes kare files me jaaye then app me settings and urls.py ke baad hogi WSGI usme changes kare And then collectstatic cmd chalaye
+python manage.py collectstatic
+
+✅ STEP 10 — Web me jaaye waha par new app then manualpe click kar ke --> version select kariye apna jo aapko bash me bhi mil jaayega 
+then version select karneke baad 1) Source code daale 2)usme niche WSGI configuration file:- uspe click kar ke code daale 
+3)Virtualenv: /home/BirdBiddingApp/.virtualenvs/myenv 4) Static files: URL:- /static 5)Directory:- 	/home/BirdBiddingApp/bird-bidding-app/bird_bidding_app/staticfiles 
+Source code:
+/home/BirdBiddingApp/bird-bidding-app 
+Force HTTPS: Enable kar do 
