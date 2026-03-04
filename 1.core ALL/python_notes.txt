@@ -1,3 +1,25 @@
+# Python Complete Notes Repository
+
+This repository contains my complete Python learning notes starting from **basic concepts to advanced topics**.
+
+It includes:
+
+* Operators (Arithmetic, Logical, Bitwise, etc.)
+* Data Types & Type Conversion
+* Conditional Statements
+* Loops (for, while)
+* Functions (All Types of Parameters)
+* OOP Concepts (Class, Object, Methods, Variables)
+* Modules & Packages
+* Collections (List, Tuple, Set, Dictionary)
+* Built-in Functions
+* Important Interview Tricks & Concepts
+
+These notes are structured for quick revision and interview preparation.
+Everything is written in simple and clear language for better understanding.
+
+During interviews, this repository serves as a quick reference covering definitions, examples, and core concepts from basics to advanced level.
+
 #----------------#-------------------#--------------------#-------------------#-------------------#----------------
 
 # Arithmetic Operators:- + (Addition),  - (Subtraction), * (Multiplication), / (Division) , % (Modulus - returns the remainder of a division) // (Floor Division) ** (Exponentiation) print(2**5) 2 ki power 
