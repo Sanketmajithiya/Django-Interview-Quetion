@@ -29,10 +29,11 @@ oprater overloading
 method overloading
 
 
-# genrater :- aam ki gutli hai woh samgri hai aam ke ped bana ne kii...
-yield statements :-(values in the fly genrate hogi) at the time memoary lega jarror hoi tyare j memoary lega list ke mukable fast hai ager 5crod numbers hai to 
-Leasy hote hai (jarror hoga tab hi kaam karega)
+# genrater :-ek special function hai jo ki yield keyword kaa use kar ke value ko memory me store karta hai ek ek kar ke.insatde of sara data ko memory me ek sath store karne ke bajaye. ye memory efficiant hai. ye larg data jese 5 crod data ko handle kar sakta hai. ye list ke mukable fast hai 
+isko lazy bhi kaha jata hai → jab zarurat hoti hai tabhi kaam karega 
 memoary save karenge or time bhi....
+# Ex:- aam ki gutli hai woh samgri hai aam ke ped bana ne kii...
+
 
 # Decorator:- @ se start likha jayega ek baar create karlo fir usse hamare project me koi bhi function me apply karo automatic modify hojayega woh function hamara....
 # decorator ka use ham kisi bhi function ko modify karne ke liye karte hai
