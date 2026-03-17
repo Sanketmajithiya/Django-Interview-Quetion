@@ -58,9 +58,9 @@ koi bhi text ko <h1> or <b1> escapes
 
 (5) uper deatils likhi (Werkzeug)
 (Optional) ye Alag se install karne hote hai..
-(6) Blinker:- singnals ko suppourt karna.Ager Hume singnals Data ko process  karna hai to Blinker use.   
+(6) Blinker:- singnals ko support karna.Ager Hume singnals Data ko process  karna hai to Blinker use.   
 
-(7) python-dotrnv:-  .env se kuch lena hai kisi kaa path lena hai,Data base kaha par pada hai Api kaha par rakhi hai ye sari envirment varibles ke under hoti hai 
+(7) python-dotenv:-  .env se kuch lena hai kisi kaa path lena hai,Data base kaha par pada hai Api kaha par rakhi hai ye sari envirment varibles ke under hoti hai 
 envirment varibles means ke key-values, key-values ki .env file hoti hai function call kiya or install liya to read kar sakte hoo
 
 (8) watchdog:- kisi ne kya kab access kiya kese request aa rahi hai,kya changes huva ye sare watching  ka kaam hai watchdog se  hoga.(moniter file system events.)
