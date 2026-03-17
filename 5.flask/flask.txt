@@ -18,7 +18,7 @@ Dusre python ke frameworks :-
 why should we learn flask? 
 
 flask gives an ample amount of choice..
-sab ko suppourt karega sare tools ko 
+sab ko support karega sare tools ko 
 like:- VS code , jupiter, pycham
 
 flask devlope
