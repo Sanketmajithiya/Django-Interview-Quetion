@@ -62,9 +62,8 @@ koi bhi text ko <h1> or <b1> escapes
 
 (7) python-dotenv:-  .env se kuch lena hai kisi kaa path lena hai,Data base kaha par pada hai Api kaha par rakhi hai ye sari envirment varibles ke under hoti hai 
 envirment varibles means ke key-values, key-values ki .env file hoti hai function call kiya or install liya to read kar sakte hoo
-
+Flask me .env ka use hota hai? 👉 Yes, hota hai Lekin ⚠️ Flask ka built-in feature nahi hai👉 Iske liye hum use karte hai: python-dotenv library
 (8) watchdog:- kisi ne kya kab access kiya kese request aa rahi hai,kya changes huva ye sare watching  ka kaam hai watchdog se  hoga.(moniter file system events.)
-
 TOPICS :-
 (midle where in python)
 **WSGI(Web server Gateway interface)for flask :- 
