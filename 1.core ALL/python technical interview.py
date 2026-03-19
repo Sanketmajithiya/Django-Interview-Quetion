@@ -15,10 +15,10 @@ else:
 #     for i in range(0, int(n/2)):
 #         if s[i] != s[n-i-1]:
 #             return 'No'
-#         return 'Yes'
+#     return 'Yes'
     
-#     s = "sanket"
-#     print(ispalindrom(s))
+# s = "sanket"
+# print(ispalindrom(s))   
     
 # Q-2  Create fibonacci series using recorsion..? 
 # with out recorsion 
