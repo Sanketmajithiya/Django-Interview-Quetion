@@ -37,7 +37,7 @@ for i in range(n):
 
 # 1. Basic List Comprehension Syntax:-
 # [expression for item in iterable] 
-# EX :-
+# EX :- [2x2=4, 3x3=9, 4x4=16,  5x5=25] etc square   
 square = [x**2 for x in range(1,6)]
 print(square)    
     
