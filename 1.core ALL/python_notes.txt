@@ -1,25 +1,3 @@
-# Python Complete Notes Repository
-
-This repository contains my complete Python learning notes starting from **basic concepts to advanced topics**.
-
-It includes:
-
-* Operators (Arithmetic, Logical, Bitwise, etc.)
-* Data Types & Type Conversion
-* Conditional Statements
-* Loops (for, while)
-* Functions (All Types of Parameters)
-* OOP Concepts (Class, Object, Methods, Variables)
-* Modules & Packages
-* Collections (List, Tuple, Set, Dictionary)
-* Built-in Functions
-* Important Interview Tricks & Concepts
-
-These notes are structured for quick revision and interview preparation.
-Everything is written in simple and clear language for better understanding.
-
-During interviews, this repository serves as a quick reference covering definitions, examples, and core concepts from basics to advanced level.
-
 #----------------#-------------------#--------------------#-------------------#-------------------#----------------
 
 # Arithmetic Operators:- + (Addition),  - (Subtraction), * (Multiplication), / (Division) , % (Modulus - returns the remainder of a division) // (Floor Division) ** (Exponentiation) print(2**5) 2 ki power 
@@ -153,6 +131,46 @@ Example =  if = 10   # ❌ Error aayega
 :- id,else, elif,not,true,false,continue,def,try,except,lambda,import,or,pass,return ye sare 
 datatypes:- 
 
+# data-types:- Data type programming me ye batata hai ki variable me kis type ki value store hogi, jaise number, text ya true/false, aur us value par kaunsi operations perform kar sakte hain.
+
+Numeric type:- int,float,complex 
+Example :
+    age = 27, page = 300
+    price = 41.50
+    complex = 20 + (-2)j
+
+Text Type:string
+
+Boolean type: True and False 
+
+squeance Type:- 
+List:- 
+Tuple:- 
+range:- 
+
+Map:- dict
+
+set type:- 
+set, frozen set:- 
+
+None type – NoneType
+Binary types – bytes, bytearray, memoryview
+
+**Explicit Data Type (Type Casting) **
+Explicit ka matlab hota hai manually.
+
+Jab hum khud variable ka data type change karte hain using functions like:
+int()
+float()
+str()
+to usse Explicit Type Casting kehte hain.
+
+PEP8:- python Enhancement Proposal style gudide hai python kaa 
+- PEP 8 is a guide for writing clean, readable, and consistent Python code.
+- Following PEP 8 is recommended karta hai all Python developers ko.
+- ki woh snake case me variable name likhe yaani variable name - lowercase me likhe and name me underscore kaa use kare   
+- And Also python me function name me snake case kaa use kare 
+- Class names in Python use camel case, with each word starting with a capital letter.
 
 # conditional statments:-  
 ✅ 1️ Simple `if` Statement:- 👉 Jab condition True ho tab code chalega.
@@ -194,9 +212,30 @@ User-defined Functions:-
 
 Attribute :- variable jo class ya object ke andar hota hai.
 what is methods :- (class ke under jo function aata hai woh this is none as methods)
-what is instance:-(constrocter ke under jo variable ata hai woh)
+what is instance:- kisi class se banaya huva actual object
+- class ek blue print hoti hai and uss blueprint se jo object banta hai usse instance kehte hai...
+Ex:- class Car:
+    pass
 
-# self hai isko hum object bhi keh sakte hai woh humara object hi huva 
+car1 = Car() # yaha car ek class hai and car1 hai uska instance
+
+# what is diffrence between object and instance:- 
+Object: koi bhi real entity jo program me create hui ho.
+Instance: ek object jo kisi particular class se bana ho.
+
+✅ Short line jo interview me bol sakte ho:-
+Every instance is an object, but jab hum bolte hain instance tab hum class ke relation me baat kar rahe hote hain.
+
+# what is object:- Object ek instance hota hai class ka. Class ek blueprint hai aur object us blueprint se banne wali real entity hoti hai jo data aur methods ko hold karti hai.
+# simple:- object ek real world entity hai  Ex:- jo jo bhi chize hume dikhti hai woh jese table,car,bike etc...
+class Student:
+    def show(self):
+        print("Hello")
+
+s1 = Student()   # s1 object hai
+s1.show()        # self us object ka reference hai 
+
+# self hai isko hum object ka reference bhi keh sakte hai woh humara current object ka reference huva 
 Ex:- Object ke liye → Instance Attribute (self.name)
 Class ke liye → Class Attribute / Static Variable (school)
 
@@ -209,8 +248,17 @@ Ex:- class comapny:
 
 # instance method:- methods ke under implemetation karte hai instance variable kaa use karke to ese methods ko instance method kaha jata hai 
 
-# instance variables :- inside a constorctorce variable this instance  non as (object ke level variable yaa ni object to object value of varid)
+# instance variables :-  Constructor (__init__) ke andar self ke saath jo variables define hote hai unko instance variables kehte hai. Ye variables har object ke liye alag-alag value store karte hai.
+Ex:- class Student:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
 
+s1 = Student("Sanket", 22)
+s2 = Student("Rahul", 21)
+
+Ans:- self.name   ✔️ Instance variables hai
+self.age
 # static variable :- inside a class we can declare this is static varable(class Level)
 
 # Local variable :- ye hamare function ke baad decalare karte hai (method Level variable)
@@ -220,6 +268,20 @@ Ex:- class comapny:
 
 # 1. what is function 2. what is python keywords and wat are the keywords 3. what are global variables and local variables 4.what is type con ersion in python?   
 
+# what is function:-  
+function is reusable code that perform specific task function ko likha jata hai def keyword ki help se
+synax:- 
+def function_name(parameters):
+With return: Ye value return karega jo store bhi ho sakti hai.
+func call karna:- Ab ye line likhte hi function ka code execute hoga. ----> greet() <---  isse bolte hai call karna 
+
+# def greet():
+#     print("hello sanket")
+
+# greet() 
+👉 Function banana = define karna
+👉 Function chalana = call karna
+👉 Function call karna = function ko run/execution ke liye use karna
 # data-collection:- 
 
 # dict:- python ke under dictionary built in data type hai jo ki use hota hai key and value pair me jo ikha jata hai Curly braces {} me and woh mutable hai jisme key hai woh humari unique hoti hai And value mutable hoti hai dictionary hai woh unnorderd,Unindexed,duplicate values are not allowed 
@@ -312,3 +374,175 @@ Output:Sanket 22
 # while loop condition based hota hai.While loop tab use hota hai jab tak ek condition true rehti hai. Jab condition false ho jaati hai tab loop stop ho jaata hai. Isme iterations ka exact count pehle se pata hona zaroori nahi hota
 
 # short diffrence:- For loop fixed iterations ke liye use hota hai, jabki while loop condition based hota hai
+
+# Exception handling:- Python me Exception Handling ek mechanism hai jo program run hone ke time agar koi error aa jaye to usko handle karta hai. Iska use karke hum program ko crash hone se bacha sakte hai aur error ko properly manage kar sakte hai.
+
+try:- Yaha wo code likhte hai jisme error aane ka chance ho.
+
+except:- Agar error aa jaye to usko handle karne ke liye ye block run hota hai.
+
+else:- Agar koi error nahi aaya to ye block run hota hai.Ex:- kuch print kara naa hai ki successfully complted..!!
+esa kuch msg show karne user ko 
+
+finally:- Ye block hamesha run hota hai, chahe error aaye ya naa aaye. 
+
+
+Assert:- 
+assert ka use hum program me condition check karne ke liye karte hai.
+
+Agar condition True hoti hai to program normal run karta hai.
+Agar condition False ho jati hai to AssertionError aata hai aur program stop ho jata hai.
+
+Simple line me
+assert → condition check karta hai, agar condition galat ho to error deta hai.
+
+
+# File handling python:- File Handling ka use Python me files ko read, write aur manage karne ke liye hota hai taaki data ko permanently store karke baad me use kiya ja sake. syntax f = open(filename,mode)
+
+# r ,w ,a, x ,r+, w+ ,readlines,readline,
+# Append Mode (a)
+# Append mode ka use file ke end me naya data add karne ke liye hota hai.
+# Agar file pehle se exist karti hai → to data last me add ho jata hai, purana data delete nahi hota.
+# Agar file exist nahi karti → to Python nayi file create kar deta hai.
+# Simple line me
+# Append mode (a) file ke end me data add karta hai bina purana data delete kiye.
+
+# Regex (Regular Expression) Definition
+"""
+Regular Expression ek pattern matching technique hai jiska use strings me specific patterns ko search, match, extract ya replace karne ke liye kiya jata hai.
+
+Python me Regex use karne ke liye re module use hota hai. """
+
+Important Regex Functions (Interview me puchte hai)
+1️⃣ re.match()
+String ke start se pattern check karta hai
+2️⃣ re.search()
+String me kahin bhi pattern find karta hai
+3️⃣ re.findall()
+Saare matching patterns ki list return karta hai
+4️⃣ re.sub()
+String me pattern ko replace karta hai
+
+# -------------#--------------#-------------------OPPOS--------------------#-------------------#-------------#
+# 1️⃣ Class :- Class ek blueprint hai jisse objects create kiye jate hai. Class ke andar attributes (variables) aur methods (functions) define kiye jate hai.
+
+Example idea: for example hum koi bike ya car bana te hai to usse pehle uska blue print ready karte hai.usse yaani ki kesi hogi uske baad hum bike ko actual me bana naa start karte hai car kaa Design 
+# -------------#--------------#-------------------Objects--------------------#-------------------#-------------#
+# 2️⃣  Object:- # simple:- object ek real world entity hai  Ex:- jo jo bhi chize hume touch yaa dekhb sakte hai woh jese table,car,bike,table etc...
+class Student:
+    def show(self):
+        print("Hello")
+
+s1 = Student()   # s1 object hai 
+s1.show()        # self us object ka reference hai 
+
+# -------------#--------------#-------------------inharitnce--------------------#-------------------#-------------#
+# inharitnce:- inharitnce is mechanism where a new class kii properties and behavior ko exiting class me inharit kar ke access kar sakte hai...
+# 1 single inharitnce, 2 multiple inha, 3 multi-level, 4 herachical, 5 hybrid inharitnce
+1️⃣ Single Inheritance                          
+
+👉 1 Parent → 1 Child                       |                      4️⃣ Hierarchical Inheritance                              
+                                            |                       👉 1 Parent → Multiple Child
+A → B                                       |                                  A
+                                            |                                 / \
+2️⃣ Multiple Inheritance                     |                                B   C
+                                            |
+👉 Multiple Parent → 1 Child               |                        5️⃣ Hybrid Inheritance
+                                            |                        👉 Combination of multiple types  (ek ek parent uske 2 chiled and uska sunchild ese ) 
+                                            |                                  A                                                              
+A   B                                       |                                 / \ 
+ \ /                                        |                                B   C
+  C                                         |                                 \ /
+                                            |                                  D
+3️⃣ Multilevel Inheritance
+👉 Chain (Grandparent → Parent → Child)
+
+A → B → C
+
+1️⃣ super() ka simple meaning:- Matlab jab child class ko parent class ka method ya constructor use karna hota hai, tab super() use karte hain.
+super() ka use parent class ke methods ko child class se call karne ke liye hota hai.
+# -------------#--------------#-------------------polymorphism--------------------#-------------------#------------#
+# polymorphism(many-forms) :-Polymorphism ka matlab hota hai "one name, multiple forms". Ek hi function ya method different objects par different tarike se behave kare,to use Polymorphism bolte hai.
+
+# Simple language me:- 
+# Ek hi function ya method alag-alag objects par alag tarike se kaam kare to use Polymorphism bolte hai.
+
+in python method overriding is possibal and supported
+and method overloading are not supported
+
+4 ways to use polymorphism
+1️⃣ Duck Typing :- mujhe object ka  name nahi malum hai to woh automatically le lega us object ki value ko mujhe specified karne ki jarrorat nahi hai.(Dynamic type,variable,object ko resuble) 
+Python me object ka type important nahi hota, agar object me required method hai to wo kaam karega.
+Example idea: different objects same method use kare.
+2️⃣ method overloading :-  class name same ,method bhi same  paramiters are different 
+3️⃣ method overRiding :- class name same paramiters are same lekin A ko B me inharit karana yaa ni parent class ki properties ko child class me inharit karva naa...
+4️⃣oprater overloading:- Python me operators ko special methods ke through different behaviour diya ja sakta hai.
+Example:
+5 + 3
+"Hello" + "World"
++ operator numbers aur strings dono ke liye different kaam kar raha hai.
+
+1️⃣ Function vs Method
+
+✔️ Function → class ke bahar hota hai
+def add(a, b):
+    return a + b
+
+✔️ Method → class ke andar hota hai
+class Calc:
+    def add(self, a, b):
+        return a + b
+# -------------#--------------#-------------------genrater--------------------#-------------------#------------
+
+# genrater :-ek special function hai jo ki yield keyword kaa use kar ke value ko memory me store karta hai ek ek kar ke.insatde of sara data ko memory me ek sath store karne ke bajaye. ye memory efficiant hai. ye larg data jese 5 crod data ko handle kar sakta hai. ye list ke mukable fast hai 
+isko lazy bhi kaha jata hai → jab zarurat hoti hai tabhi kaam karega 
+memoary save karenge or time bhi....
+# Ex:- aam ki gutli hai woh samgri hai aam ke ped bana ne kii...
+
+# -------------#--------------#-------------------Decorator--------------------#-------------------#------------
+# @ se start likha jayega ek baar create karlo fir usse hamare project me koi bhi function me apply karo automatic modify hojayega woh function hamara....
+# decorator ka use ham kisi bhi function ko modify karne ke liye karte hai
+# example :-
+# @my_decorator
+# def my_function():
+#     pass
+# my_function()  # my_function() function ko modify kar dega my_decorator function
+
+it is a function to return  modify function    
+
+# -------------#--------------#-------------------constuctor--------------------#-------------------#------------
+
+__init__ dunder method bhi kehte hai
+1 parameterrise constouctor EX def __init__(self,name,Age)
+2 default constuctor as (self) arguments lega ye
+its a constuctor in python aumatcally run, isko dunder method bhi kaha jata hai sab se pehle ye excute hoga hamare program me 
+Example deskte hai isme hum :-  
+# constouctor
+# class fruit:
+#     def __init__(self):
+#         print("object created")
+#     def __init__(self):
+#         print("creted by objects")   #Ans:=  creted by objects
+
+# objects = fruit()
+
+# -------------#--------------#-------------------Abstraction--------------------#-------------------#------------
+# 1️⃣ Abstraction:-  Abstraction ka matlab hota hai unnecessary details ko hide karna aur sirf important functionality ko user ko dikhana. abc module kaa use hota hai.
+
+Simple example
+Car chalate waqt:
+Tum steering, brake, accelerator use karte ho
+Lekin engine andar kaise kaam karta hai wo hidden hota hai
+Ye Abstraction hai.
+
+Python me kaise use hota hai
+Python me abstraction abstract classes aur abstract methods se implement hota hai.
+
+# -------------#--------------#-------------------Encapsulation--------------------#-------------------#------------
+# 2️⃣ Encapsulation :- Encapsulation ka matlab hota hai data aur methods ko ek single unit (class) ke andar bind karna aur data ko protect karna.
+
+
+
+
+refrence count 
+garbage collection
