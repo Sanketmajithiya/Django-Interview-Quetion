@@ -116,7 +116,7 @@ else:
 #3) Write a Python program to find the second smallest number in a list.   
 my_list = [10,20,50,30,40,60,5,10]
 
-squence_list = (sorted(my_list))
+squence_list = (sorted(set(my_list)))
 
 print(squence_list[1])
 #--------------------#-----------------#-----------------# 
