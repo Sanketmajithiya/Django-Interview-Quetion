@@ -147,8 +147,8 @@ print(my_dict)
 mutable data type in python
 LIST is mutable usme run time hum changes kar sakte hai
 Dict :- key :- mutable and value :- immutable
-
-immutable :- string, Tuple, set
+set:- 
+immutable :- string, Tuple, frozenset
 
 """
 
