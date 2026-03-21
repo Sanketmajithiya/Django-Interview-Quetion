@@ -196,13 +196,9 @@ Continue Statement :- continue statement current iteration ko skip kar deta hai 
  output-   'yellow is sun the'
 
 """
-# string = 'the sun is yellow'
-# string = string.split()
-# string = string[::-1]
-# print(string)
-
-# or
-# print(''.join(string.split()[::-1]))
+string = 'the sun is yellow'
+result = ' '.join(string.split()[::-1])
+print(result)
 
 # Q-3 Tell me about Oppos (Inharitance ,polymorphrishm,encapsulation....)
 
