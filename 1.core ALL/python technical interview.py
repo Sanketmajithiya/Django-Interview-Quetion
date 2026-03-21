@@ -156,10 +156,9 @@ immutable :- string, Tuple, frozenset
 """
 jab bhi hum for loop yaa while loop ka use karte hai tub hum break yaa continue statements kaa use karte hai 
 
-break statement :- break jab chalti hai tab uske baad kaa jitna bhi execution hota hai particular loop kaa woh bandh hojata hai woh wahi se nikal kar bhar ajata hai
+break statement :- break statement jab execute hota hai tab wo poore loop ko turant stop kar deta hai aur control loop ke bahar aa jata hai.
 
-Continue Statement :- 
-uske aage wali itration to nahi chalti lekin uske next wali chalne lagti hai  (woh use ko skip kar degi waha se...) woh for loop fir se work karti hai ...
+Continue Statement :- continue statement current iteration ko skip kar deta hai aur loop next iteration se continue hota hai.
 """
 # Q-8  what is Diffrence Between *args & **kwargs ?
 # ANS :- Basicaly hum function definede karte hai or jab Hume pata nahi hota hai isme kitne Number off parameter jayenge Tab hum ye dono kaa use karte hai  
