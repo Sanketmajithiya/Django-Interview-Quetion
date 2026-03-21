@@ -184,10 +184,7 @@ Continue Statement :- continue statement current iteration ko skip kar deta hai 
 # ANS:- python manage.py makemigrations ()
 
 
-
-
 # ROUND 2 :=
-
 
 # Q-1 Find the maximuum and min value from a list without using any predefind function
 """
@@ -228,7 +225,7 @@ prefetch_related:- prefetch_related ka use ManyToMany aur reverse relationship m
 """
 
 # Q-6  What is Django ORM ?
-# ANS:= Data base related queries likh ni hoti hai tab hum Django ORM kaa use karte hai. Django me hum  queryset use karte hai woh Django ORM based hi hoti hai Woh sab ko use kar ke hum Data base me kisi bhi Tarah ki modification kar sakte hai..
+# ANS:= Django ORM (Object Relational Mapping) ek technique hai jisme hum Python code ke through database ko interact karte hain, bina raw SQL queries likhe. Isme hum models aur querysets ka use karke data ko create, retrieve, update aur delete kar sakte hain.
 
 # Q-7  Ager kya hoga hum get function use katre hai query set me or usko particular Record na mile To kya situation Ho sakti hai ...     
 
