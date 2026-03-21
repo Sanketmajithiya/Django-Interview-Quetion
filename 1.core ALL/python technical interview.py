@@ -223,8 +223,8 @@ finally:
 
 # Ans:=
 """
-Hamare pass Models hai uska connection Ager foregin Key ke sath hoga usme Ek(1) to hum data base ko heat kare or waha se result leke aaye  
-second(2) chiz ki hum  ek Data ko load kar rahe hai to sath me Dusre ko bhi load kara le  Takki hume baar baar Data Base me jaane ki jaroorat na pade to hum uske liye ye dono chiz ka use karte hai 
+ select_related:- select_related ka use ForeignKey aur OneToOne relationship me hota hai.Ye single query (JOIN) me related data fetch karta hai.
+prefetch_related:- prefetch_related ka use ManyToMany aur reverse relationship me hota hai.Ye multiple queries chalata hai aur data ko combine karta hai.
 """
 
 # Q-6  What is Django ORM ?
