@@ -161,9 +161,11 @@ break statement :- break statement jab execute hota hai tab wo poore loop ko tur
 Continue Statement :- continue statement current iteration ko skip kar deta hai aur loop next iteration se continue hota hai.
 """
 # Q-8  what is Diffrence Between *args & **kwargs ?
-# ANS :- Basicaly hum function definede karte hai or jab Hume pata nahi hota hai isme kitne Number off parameter jayenge Tab hum ye dono kaa use karte hai  
-# list me parameter Bhej rahe hote hai tab use karte hai only (key)
-# **kwaegs:- Dict me  hum key values parameter behj te hai  tab use karte hai  
+# ANS :- Basically hum function defined karte hai tab hume pata nahi hota hai ki kitne parameters defined honge tab hum use karte hai  *args and **kwargs kaa...  
+#*args ka use tab hota hai jab hume pata nahi hota ki function me kitne positional arguments aayenge. Ye sab values ko tuple me store karta hai.
+# **kwargs ka use tab hota hai jab hume pata nahi hota ki kitne keyword arguments aayenge. Ye sab data ko dictionary (key-value pair) me store karta hai.
+👉 *args = values
+👉 **kwargs = key-value
 
 # Q-9 what is GIL in (Global  Interpretor Lock) python
 
