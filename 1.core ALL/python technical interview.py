@@ -133,17 +133,17 @@ print(my_dict)
    
 # jab bhi hum ek function me Dusre kisi function ko call karte hai usse Decorater kaa name de dete woh function me without change function uski sari functionality ajayegi...
 # example :-
-# def login_requried(func):
-#     def wrapper():
-#         print("checking login ..")
-#         func()
-#     return wrapper
+def login_requried(func):
+    def wrapper():
+        print("checking login ..")
+        func()
+    return wrapper
 
-# @login_requried
-# def dashboard():
-#     print("Welcome to dashboard")    
+@login_requried
+def dashboard():
+    print("Welcome to dashboard")    
     
-# dashboard()   
+dashboard()   
 
 🔥 Simple Breakdown
 login_required → decorator
