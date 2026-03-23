@@ -44,7 +44,6 @@ print(square)
 # with  recorsion means function call it self again and again (ye tab use hoga jab for loop ke bina baar baar condition repeat karani ho hume or out put chahiye ...)
 
 
-
 # Q-3 count No of ocurrence of A character in A string Also print charcter & it's count
 
 # Q- 4 Diffrence Between Generators And iterators....
@@ -134,12 +133,22 @@ print(my_dict)
    
 # jab bhi hum ek function me Dusre kisi function ko call karte hai usse Decorater kaa name de dete woh function me without change function uski sari functionality ajayegi...
 # example :-
-# @my_decorator
-# def my_function():
-#     pass
-# my_function()  # my_function() function ko modify kar dega my_decorator function
+# def login_requried(func):
+#     def wrapper():
+#         print("checking login ..")
+#         func()
+#     return wrapper
 
+# @login_requried
+# def dashboard():
+#     print("Welcome to dashboard")    
+    
+# dashboard()   
 
+🔥 Simple Breakdown
+login_required → decorator
+dashboard → original function
+@login_required → decorator apply karna  
     
 # Q-6 what & which Are Mutable & Immutable Datatypes In python?
 
