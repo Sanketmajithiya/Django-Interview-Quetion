@@ -25,8 +25,7 @@ Ans:- views stand karte hai backend ke liye jiski help se model and template hen
 
 Q-6 what is django ORM ?
 
-Ans:- ORM  object relational mapping jiski help se hum queries likh te hai jese ex:- All, Get,filter,
-create,save, Delete jo ye sare methods use karte hai woh ORM querise ke liye use karte hai.
+Ans:- Django ORM (Object Relational Mapping) ek technique hai jisme hum Python code ke through database ko handle karte hain, bina raw SQL queries likhe. Isme hum models aur querysets ka use karke data ko create, retrieve, update aur delete kar sakte hain.
 
 Q-7 Define static files and explaine their uses?
 
