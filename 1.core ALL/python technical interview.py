@@ -155,10 +155,9 @@ dashboard → original function
 """
 mutable data type in python
 LIST is mutable usme run time hum changes kar sakte hai
-Dict :- key :- mutable and value :- immutable
-set:- 
-immutable :- string, Tuple, frozenset
-
+Dict :- key :- mutable and value :- immutable 
+mutable:- List,Dict,set,bytarray
+immutable :- string,Tuple,frozenset,int,float,bool
 """
 
 # Q-7 Difference between The Break & Continue Statement ?
