@@ -163,9 +163,7 @@ immutable :- string,Tuple,frozenset,int,float,bool
 # Q-7 Difference between The Break & Continue Statement ?
 """
 jab bhi hum for loop yaa while loop ka use karte hai tub hum break yaa continue statements kaa use karte hai 
-
 break statement :- break statement jab execute hota hai tab wo poore loop ko turant stop kar deta hai aur control loop ke bahar aa jata hai.
-
 Continue Statement :- continue statement current iteration ko skip kar deta hai aur loop next iteration se continue hota hai.
 """
 # Q-8  what is Diffrence Between *args & **kwargs ?
@@ -235,7 +233,7 @@ prefetch_related:- prefetch_related ka use ManyToMany aur reverse relationship m
 """
 
 # Q-6  What is Django ORM ?
-# ANS:= Django ORM (Object Relational Mapping) ek technique hai jisme hum Python code ke through database ko interact karte hain, bina raw SQL queries likhe. Isme hum models aur querysets ka use karke data ko create, retrieve, update aur delete kar sakte hain.
+# ANS:= Django ORM (Object Relational Mapping) ek technique hai jisme hum Python code ke through database ko handle karte hain, bina raw SQL queries likhe. Isme hum models aur querysets ka use karke data ko create, retrieve, update aur delete kar sakte hain.
 
 # Q-7  Ager kya hoga hum get function use katre hai query set me or usko particular Record na mile To kya situation Ho sakti hai ...     
 
@@ -252,9 +250,3 @@ prefetch_related:- prefetch_related ka use ManyToMany aur reverse relationship m
 # ANS := kis Tarah se  Pehle low level Design kiya fir High level Design kiya . Data Base kese Create kiya .client se kese baat karta tha. Devlopment kese kii back End kese chal raha tha Front End kese chal raha tha mera kya contribution uss particular project me Explain kii...
 
 # Q-10 Explain Current Project ..?
-
-
-
-
-
-
