@@ -44,7 +44,7 @@ project ke under :- data base configuration karte hai hamari settings configurat
 
 Q-10 what database are supported by Django ?
 
-Ans:-  sare db suport karta hai like. mysql , post gap, nosqal, sqlakami, php myadmin, oracal all data bases are supported but you are  show only data bases list.
+Ans:-  Django SQLite, MySQL, PostgreSQL aur Oracle jaise databases ko support karta hai. By default Django SQLite use karta hai.
 
 Q-11 What's the use of s session framwork?
 
