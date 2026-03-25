@@ -46,6 +46,6 @@ Q-10 what database are supported by Django ?
 
 Ans:-  Django SQLite, MySQL, PostgreSQL aur Oracle jaise databases ko support karta hai. By default Django SQLite use karta hai.
 
-Q-11 What's the use of s session framwork?
+Q-11 What's the use of session framwork?
 
 Ans:-Session framework ka use user ki activity handle karne ke liye hota hai , user login hai yaa nahi woh check karta hai, data koi bhi page par access kar sakte hai apko sirf woh data session ke under dal naa hota hai session  serverside  par work karta hai and more secure hota hai and check of user validation ager user login hai to hi usko accessibility deni hai sari website ki ager user Login nahi hai to usko accessibility nahi milegi session ke under .
