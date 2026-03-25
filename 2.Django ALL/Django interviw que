@@ -38,7 +38,7 @@ Ans :- jiski helps se apki request particular view  tak pohch ti hai or woh likh
 
 Q-9 what is the difference between a project and an app in Django?
 
-Ans :- project ek configuraton process hai jiski help se App ko hendle kiya jata hai and App ke under :- hum server side coding karte hai  templates rakhte hai or hamara view rakhte hai hamare models bhi rakhte hai
+Ans :- project ek configuraton process hai jiski help se App ko handle kiya jata hai and App ke under :- hum server side coding karte hai  templates rakhte hai or hamara view rakhte hai hamare models bhi rakhte hai
 project ke under :- data base configuration karte hai hamari settings configuration karte hai or App URL Configuration karte hai
 
 
@@ -48,4 +48,4 @@ Ans:-  Django SQLite, MySQL, PostgreSQL aur Oracle jaise databases ko support ka
 
 Q-11 What's the use of s session framwork?
 
-Ans:- its a use handles of user Activitys  karne , user login hai yaa nahi woh check karta hai, data koi bhi page par access kar sakte hai apko sirf woh data session ke under dal naa hota hai session is serverside work and more sequre and check of user validation ager user login hai to hi usko accesibilty deni hai sari website ki ager user access nahi hai to usko accesibilty nahi milegi session ke under .
+Ans:-Session framework ka use user ki activity handle karne ke liye hota hai , user login hai yaa nahi woh check karta hai, data koi bhi page par access kar sakte hai apko sirf woh data session ke under dal naa hota hai session  serverside  par work karta hai and more secure hota hai and check of user validation ager user login hai to hi usko accessibility deni hai sari website ki ager user Login nahi hai to usko accessibility nahi milegi session ke under .
