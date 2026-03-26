@@ -26,3 +26,158 @@ what is :-
 
 API MIXING (short form create api so that is api MIXING)
 
+# 🔹 **Basic DRF Interview Questions**
+
+# 1. What is Django REST Framework (DRF)?
+👉 DRF ek toolkit hai jo Django me APIs banane ke liye use hota hai.
+
+---
+
+# 2. What is an API?
+👉 API (Application Programming Interface) ek medium hai jisse frontend aur backend communicate karte hai.
+
+---
+
+# 3. Difference between Django and DRF?
+👉
+* Django → Web apps (HTML render karta hai)
+* DRF → APIs (JSON response deta hai)
+
+---
+
+# 4. What is a Serializer?
+👉 Serializer Django model data ko JSON me convert karta hai aur JSON ko Python object me convert karta hai.
+
+---
+
+# 5. Serializer vs ModelSerializer?
+👉
+* Serializer → manually fields define karne padte hai
+* ModelSerializer → automatic model se fields le leta hai
+
+---
+
+# 6. What is Request and Response in DRF?
+👉
+* Request → client se aata hai
+* Response → server se JSON me return hota hai
+
+---
+
+# 7. What is status code?
+
+👉 HTTP response codes (200, 201, 400, 404, etc.)
+
+---
+
+# 🔹 **Intermediate DRF Questions**
+
+# 8. What are API Views in DRF?
+
+👉 API banane ke liye views use hote hai
+Types:
+
+* APIView
+* GenericAPIView
+* ViewSets
+
+---
+
+# 9. What is APIView?
+
+👉 DRF ka basic class-based view jisme hum manually GET, POST define karte hai.
+
+---
+
+# 10. What are Generic Views?
+
+👉 Pre-built views jo CRUD operations easy bana dete hai
+Example:
+
+* ListAPIView
+* CreateAPIView
+* RetrieveAPIView
+
+---
+
+# 11. What is ViewSet?
+
+👉 Ek class me multiple operations handle karta hai (list, create, update, delete)
+
+---
+
+# 12. What is Router in DRF?
+
+👉 Router automatically URLs generate karta hai ViewSets ke liye
+
+---
+
+# 13. What is Authentication?
+
+👉 User verify karna (kaun user hai)
+
+Types:
+* Session Authentication
+* Token Authentication
+* JWT
+---
+
+# 14. What is Permission in DRF?
+👉 Decide karta hai user ko access dena hai ya nahi
+
+Example: IsAuthenticated, IsAdminUser
+---
+
+# 15. What is Pagination?
+
+👉 Data ko pages me divide karna (performance ke liye)
+---
+
+
+# 🔹 **Advanced DRF Questions**
+
+# 16. What is Throttling?
+👉 API usage limit karna (rate limit)
+
+---
+# 17. What is Filtering in DRF?
+👉 Data ko filter karna using query params
+Example: /products?category=mobile
+
+# 18. What is Ordering?
+👉 Data ko sort karna
+Example: /products?ordering=price
+
+
+---
+# 19. What is Parsers and Renderers?
+👉
+* Parser → request data ko read karta hai
+* Renderer → response ko format karta hai (JSON, XML)
+
+---
+# 20. What is Middleware in DRF?
+👉 Request aur response ke beech ka processing layer
+---
+# 21. What is CORS?
+👉 Cross-Origin Resource Sharing → different domain se request allow karna
+
+---
+
+# 22. How to handle exceptions in DRF?
+👉 Custom exception handling ya try-except
+---
+
+# 23. What is JWT Authentication?
+👉 Token-based authentication jisme user login ke baad token milta hai
+---
+
+# 24. Difference between PUT and PATCH?
+👉
+* PUT → full update
+* PATCH → partial update
+
+---
+
+# 25. What is Nested Serializer?
+👉 Serializer ke andar dusra serializer (relation handle karne ke liye)
