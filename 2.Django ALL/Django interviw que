@@ -10,8 +10,8 @@ Q- 3 Explain Django Architecture .
 
 Ans:-  MVT  Architecture  banai jaati hai 
 
-model :- Data base tables model.py banai jaati hai
-View  :- backend controling and server side logic likh te hai . usme 
+Model :- Database handle karta hai (tables aur fields define karta hai).
+View :- Backend logic handle karta hai aur request ko process karta hai.
 
 Template :- Template staince for frontend 
 django ke under frontend user ko show hota hai woh template ki helpse hota hai.  
@@ -21,7 +21,7 @@ Ans:- model stance database table hum log  tables deside karte hai  data  base k
 
 Q-5 what are view in django?
 
-Ans:- views stand karte hai backend ke liye jiski help se model and template hendle kiye jaati hai woh request se kii jaati hai
+Ans:- views stand karte hai backend ke liye jiski help se model and template handle kiye jaati hai woh request se kii jaati hai
 
 Q-6 what is django ORM ?
 
@@ -48,4 +48,4 @@ Ans:-  Django SQLite, MySQL, PostgreSQL aur Oracle jaise databases ko support ka
 
 Q-11 What's the use of session framwork?
 
-Ans:-Session framework ka use user ki activity handle karne ke liye hota hai , user login hai yaa nahi woh check karta hai,  ager user login hai to hi usko accessibility deni hai sari website ki ager user Login nahi hai to usko accessibility nahi milegi session ke under. data koi bhi page par access kar sakte hai  apko sirf woh data session ke under dal naa hai. session  serverside  par work karta hai and more secure hota hai. 
+Ans:-Session framework ka use user ki activity handle karne ke liye hota hai , user login hai yaa nahi woh check karta hai, ager user login hai to hi usko accessibility deni hai sari website ki ager user Login nahi hai to usko accessibility nahi milegi session ke under. data koi bhi page par access kar sakte hai  apko sirf woh data session ke under dal naa hai. session  serverside  par work karta hai and more secure hota hai. 
