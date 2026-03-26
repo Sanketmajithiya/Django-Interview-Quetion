@@ -33,7 +33,7 @@ Ans:- java ,css ye sari files hai woh static folder ke under create kii jati hai
 
 Q-8 what is djnago urls ?
 
-Ans :- jiski helps se apki request particular view  tak pohch ti hai or woh likhi jati hai  APP ke under urls.py file jiski help se view call hota hai
+Ans :- Django URLs ka use apki request ko particular view tak pohcha ti hai or woh likhi jati hai urls.py file jiski help se view call hota hai
 
 
 Q-9 what is the difference between a project and an app in Django?
