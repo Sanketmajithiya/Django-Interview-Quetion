@@ -8,13 +8,13 @@ Ans :- MVT  Architecture follow karta hai .
 
 Q- 3 Explain Django Architecture .
 
-Ans:-  MVT  Architecture  banai jaati hai 
+Ans:-  Django MVT architecture follow karta hai jisme Model, View aur Template hote hain.
 
 Model :- Database handle karta hai (tables aur fields define karta hai).
 View :- Backend logic handle karta hai aur request ko process karta hai.
 
 Template :- Template staince for frontend 
-django ke under frontend user ko show hota hai woh template ki helpse hota hai.  
+django ke under frontend user ko Data show hota hai woh template ki helpse hota hai.  
 
 Q- 4 what are model in Django?
 Ans:- model stance database table hum log  tables deside karte hai  data  base kima deside karte hai uski fileds deside karte hai.
