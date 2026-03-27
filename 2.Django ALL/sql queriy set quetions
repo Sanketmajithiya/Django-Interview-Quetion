@@ -20,8 +20,8 @@ full outer.
  DBMS me squal me do tables yaa usse jyada tables ko use karna hai kuch contant isme or kuch isme or undono ko jod na hai to hum join ka istmal karte hai..
 
 (4) Nested subquery vs correlated subquery
-INNER QUERY:- pehle under query chalegi woh apna result de degi fir Bhar wali query ke har ek ROW se hum Result ko compare karte hai...
-ANS:- OUTER QUERY:- 
+ ANS:- Nested subquery:- inner query pehle ek baar execute hoti hai aur apna result de deti hai, uske baad outer query us result ko use karti hai...
+ Correlated subquery:-  inner query outer query ke har ek row ke liye baar-baar execute hoti hai aur outer query par depend karti hai
 
 *(5) delete, DROP, Truncate :-
 Delete :- Row ko Delete karta hai lekin one by one, 2 ki  can be ROLLBACK kiya to wapas ajayega..
