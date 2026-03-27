@@ -1,4 +1,4 @@
-(DBMS)Data Base management system is a software that used to define,create and maintain a database and provides controlled access to the data
+(DBMS) Data Base management system ek software hota hai jo database ko define, create aur maintain karta hai aur data ko controlled access provide karta hai.
 (RDMS-relational) Data ko store karte hai Table ke form me Tables ek dusre se connected hote hai using foreign key
 
 (1) what is Primary Key
