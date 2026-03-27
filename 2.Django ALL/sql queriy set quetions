@@ -6,8 +6,7 @@
 pk = unique + Notnull (matlb isko khali nahi chhod sakte)
 
 (2) what is foreign Key
-
-Tables ko Aapse me relate karna hota hai(merge) 
+Ans:- Foreign Key tables ko connect karne ke liye hoti hai aur ye dusri table ki Primary Key ko refer karti hai.
 refers legi primary Key se..
 
 primary table me se delete kare to foregin key table me se automaticaly delete hoga woh uska kaam hai
