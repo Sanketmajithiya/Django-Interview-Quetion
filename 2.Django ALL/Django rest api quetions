@@ -18,8 +18,12 @@ user data secure rahenga
 2) monitaring unlimted request nahi behj sakte ,correct form me behj sakte hai, illigle Activites nahi kar sakte hai
 3) isse kuch unique projects create kar sakte hai ex:- temprature calculate karen wali api ko use karle use apne project me  intigrate karle...
 
-what is :-  API MIXING (short form create api so that is api MIXING)
-
+what is API MIXINS:- 👉 Mixins pre-built classes hoti hai jo specific functionality provide karti hai
+Jaise:
+create
+update
+delete
+list
 
 # 🔹 **Basic DRF Interview Questions**
 
