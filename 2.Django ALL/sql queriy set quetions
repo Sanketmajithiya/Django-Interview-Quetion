@@ -25,7 +25,7 @@ full outer.
 
 *(5) delete, DROP, Truncate :-
 Delete :- specific Rows ko delete karta hai (WHERE clause “क्लॉज़” use karke) aur can be ROLLBACK kiya to wapas ajayega..
-DROP :- ye Basic Structure , Rows sab kuch DELETE kardeta hai And all to karega hi, cannot be rolled back..
+DROP :-  ye Basic Structure , Rows sab kuch pura Table hi DELETE kardeta hai And all to karega hi, cannot be rolled back..
 Truncate:- Row ko Delete karta hai ek baar me saro ko sabko,cannot be rolled back
 
 (6) Group by orderBy:-
