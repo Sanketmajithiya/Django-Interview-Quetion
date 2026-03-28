@@ -44,7 +44,7 @@ WHERE Name LIKE 'a % y'(pehla latter A hona chahiye uske baad  End me y hona cha
 - FROM employee 
 - WHERE salary < (SELECT MAX(salary) FROM employee);
 
-(9) triggers :- 3-4 table banaye 1 mai entery karu or baki me Automaticaly run hojaye so This are triggers
+(9) triggers :- 3-4 table banaye 1 mai entery karu or baki me Automaticaly entry hojaye so This are triggers
 
 (10) Acid properties :-
 Atomicity :- yaa to sari compelte hogi yaa to koi bhi nahi
@@ -85,14 +85,3 @@ Q-1 how to fetch Data from Database using Query set ?
   user.objebcts.all()
   user.objebcts.filter(name="sanket")
   user.objebcts.get(id=3) # get yani one by one id ko fatch
-
-
-
-
-
-
-
-
-
-
-
