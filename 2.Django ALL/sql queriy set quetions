@@ -39,9 +39,10 @@ WHERE Name LIKE '_a%'(pehla latter kuch bhi ho Dusra A hona chahiye )
 WHERE Name LIKE 'a_%'(pehla latter A hona chahiye uske baad koi bhi hona chahiye)
 WHERE Name LIKE 'a % y'(pehla latter A hona chahiye uske baad  End me y hona chahiye )
 
-(8) find 2nd Highest salary :-
-Ans :- SELECT name , MAX(salary) AS salary FROM employee
-WHERE salary <>[NOT IN] ( SELECT MAX(salary) FROM employee )
+(8) find 2nd Highest salary  Ans:-
+- SELECT MAX(salary) 
+- FROM employee 
+- WHERE salary < (SELECT MAX(salary) FROM employee);
 
 (9) triggers :- 3-4 table banaye 1 mai entery karu or baki me Automaticaly run hojaye so This are triggers
 
