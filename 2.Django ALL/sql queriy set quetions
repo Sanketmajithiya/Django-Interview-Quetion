@@ -24,17 +24,12 @@ full outer.
  Correlated subquery:-  inner query outer query ke har ek row ke liye baar-baar execute hoti hai aur outer query par depend karti hai
 
 *(5) delete, DROP, Truncate :-
-Delete :- Row ko Delete karta hai lekin one by one, 2 ki  can be ROLLBACK kiya to wapas ajayega..
-
+Delete :- specific Rows ko delete karta hai (WHERE clause “क्लॉज़” use karke) aur can be ROLLBACK kiya to wapas ajayega..
 DROP :- ye Basic Structure , Rows sab kuch DELETE kardeta hai And all to karega hi, cannot be rolled back..
-
 Truncate:- Row ko Delete karta hai ek baar me saro ko sabko,cannot be rolled back
 
-
 (6) Group by orderBy:-
-
 GROUP BY :- isme only group banakar usme Aggriget function use kar sakte hai means mujhe sirf HR kaa group chahiye kii sirf employes kaa chahiye Agrriget functions:_MAX,MIN,COUNT,AVG,
-
 ORDER BY :- data ko sort karne me help karta hai Asending me hai ki disending me sirf dekh sakte hai change nahi karsakte...
 
 (7) pattern Matching :- WHERE Name LIKE 'a%' (start name with a latter) 
