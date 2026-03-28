@@ -51,7 +51,7 @@ Atomicity :- yaa to sari compelte hogi yaa to koi bhi nahi
 
 consistency:- starting se leke and value same honi chahiye
 
-Isolation:- Transactions run concurrently but ek uska serialized version Bhi hona Chahiye ...
+Isolation:- multiple transactions ek saath chal sakti hai, lekin unka effect aisa hona chahiye jaise wo sequentially (one by one) execute hui ho...
 
 Durability:- ek baar save hogaya data to woh permannet hona chahiye ..
 
