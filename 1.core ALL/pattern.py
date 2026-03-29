@@ -301,8 +301,6 @@ for i in range(1,5):
 # price=20
 # books=dict()
 # print(books.fromkeys(book_list,price))
-# books.fromkeys(book_list, price)
-# print(books)
 
 
 # car = {
