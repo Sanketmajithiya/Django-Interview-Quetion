@@ -55,9 +55,8 @@ Isolation:- multiple transactions ek saath chal sakti hai, lekin unka effect ais
 
 Durability:- ek baar save hogaya data to woh permannet hona chahiye ..
 
-(11) varchar vs varchar2:- varchar ANSI(Amrican s) Standard
+(11) varchar vs varchar2:- varchar ANSI(American National Standards Institute)
 varchar2  hai woh oracal ka standerd hai
-
 
 MY SQL QUERIES :-
 1. Select all records from a table:
