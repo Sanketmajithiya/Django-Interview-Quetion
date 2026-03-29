@@ -55,7 +55,7 @@ Isolation:- multiple transactions ek saath chal sakti hai, lekin unka effect ais
 
 Durability:- ek baar save hogaya data to woh permannet hona chahiye ..
 
-(11) varchar vs varchar2:- varchar ANSI(American National Standards Institute)
+(11) varchar vs varchar2:- varchar ANSI standerd hai(American National Standards Institute)
 varchar2  hai woh oracal ka standerd hai
 
 MY SQL QUERIES :-
@@ -69,18 +69,17 @@ ANS:_ SELECT * colume1, colume2  FROM table_name;
 ANS:_  SELECT * FROM table_name WHERE condition;
 
 4. Select records with multiple conditions (using AND/OR):
-ANS:_  SELECT * FROM table_name WHRE condition 1 AND con2; 
-       SELECT * FROM table_name WHRE condition 1 OR con2; 
+ANS:_  SELECT * FROM table_name WHERE condition1 AND condition2; 
+       SELECT * FROM table_name WHERE condition1 OR condition2; 
 
 5. Use aggregate functions (COUNT, SUM, AVG, MAX, MIN):
-
 ANS:_  SELECT COUNT(*) FROM table_name; 
-       SELECT SUM(colume_name) FROM table_name; 
-       SELECT AVG(colume_name) FROM table_name; 
-       SELECT MAX(colume_name) FROM table_name; 
-       SELECT MIN(colume_name) FROM table_name; 
+       SELECT SUM(column_name) FROM table_name; 
+       SELECT AVG(column_name) FROM table_name; 
+       SELECT MAX(column_name) FROM table_name; 
+       SELECT MIN(column_name) FROM table_name; 
 
-Q-1 how to fetch Data from Database using Query set ?
+Q-1 how to fetch Data from Database using Query set?
   user.objebcts.all()
   user.objebcts.filter(name="sanket")
   user.objebcts.get(id=3) # get yani one by one id ko fatch
