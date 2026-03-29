@@ -384,9 +384,9 @@ function using defind def keywords follow by () paranteses :coma
    
   function parameters 
   1.potistional parametres
-  2. default parameters
-  3. keywords parameteres
-  4. variyable length
+  2.default parameters
+  3.keywords parameteres
+  4.variable length
   5.
   6.
   
