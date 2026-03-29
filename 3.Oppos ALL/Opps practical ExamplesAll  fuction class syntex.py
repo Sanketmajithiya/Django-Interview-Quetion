@@ -33,7 +33,7 @@ Ex  :- def pass_fail():
 #     print(f"Division successful, result is {result}")
 
 
-# 1. constructor
+# 1.Default Constructor
 # Example 2 pro*fasinal
 class Fruite:
     def __init__(self):
@@ -46,7 +46,7 @@ class Fruite:
 my_fruite = Fruite()
 my_fruite.show_type('Apple')     
 
-# 2. constructor
+# 2.Parameterized Constructor 
 class Fruite:
     def __init__(self,name,python,English) -> None:
         self.name = name
