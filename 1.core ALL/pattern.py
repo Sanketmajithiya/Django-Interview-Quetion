@@ -297,10 +297,11 @@ for i in range(1,5):
 
 
 # 'from keys '
-# book_list = ['java','python','php']
-# price=20
-# books=dict()
-# print(books.fromkeys(book_list,price))
+book_list = ["python", "java", "php"]
+price = 20
+
+books = dict.fromkeys(book_list, price)
+print(books)
 
 
 # car = {
