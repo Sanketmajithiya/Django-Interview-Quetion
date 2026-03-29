@@ -47,7 +47,7 @@ WHERE Name LIKE 'a % y'(pehla latter A hona chahiye uske baad  End me y hona cha
 (9) triggers :- 3-4 table banaye 1 mai entery karu or baki me Automaticaly entry hojaye so This are triggers
 
 (10) Acid properties :-
-Atomicity :- yaa to sari compelte hogi yaa to koi bhi nahi
+Atomicity(एटोमिसिटी) :- yaa to sari compelte hogi yaa to koi bhi nahi
 
 consistency:- starting se leke and value same honi chahiye
 
