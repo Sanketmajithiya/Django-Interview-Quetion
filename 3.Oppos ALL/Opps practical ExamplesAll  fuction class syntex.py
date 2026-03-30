@@ -76,7 +76,7 @@ print(obj2.__dict__)
 # (Multiple - Inharitance)
 
 # class Animal:
-#     def speack(self):
+#     def speak(self):
 #         print("Animal can speek")
     
 # class Dog:
@@ -84,12 +84,12 @@ print(obj2.__dict__)
 #         print("BOWW!!")
         
 # class Cat(Animal,Dog):
-#     def speack(self):
+#     def speak(self):
 #         print("Meow!!")        
         
 # myAnimal = Cat() # Cat ke under sab Ajyega Animal and Dog
 
-# myAnimal.speack()       
+# myAnimal.speak()       
 # myAnimal.walk()       
     
 # 3. Polymorphism 
