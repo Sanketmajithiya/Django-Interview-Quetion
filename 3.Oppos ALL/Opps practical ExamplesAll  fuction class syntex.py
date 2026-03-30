@@ -91,7 +91,58 @@ print(obj2.__dict__)
 
 # myAnimal.speak()       
 # myAnimal.walk()       
-    
+
+#--------------------------------------------#
+# (multi-level inh.)
+class A:
+    def a(self):
+        print("I am from class A")
+
+class B(A):
+    def b(self):
+        print("I amm from class B")
+class C(B):
+    def c(self):
+        print("I amm from class C")
+
+obj = C()
+print(dir(obj))
+obj.a()
+obj.b()
+obj.c()
+
+#--------------------------------------------#
+#(herarchical inharitance)
+""" Ek parent class and uske multiple child classes 
+       Animal
+       /    \
+     Dog    Cat
+
+"""
+class Animal:
+    def eat(self):
+        print("Animal can eat")
+
+class Dog(Animal):
+    def bark(self):
+        print("Dog barks")
+
+class Cat(Animal):
+    def meow(self):
+        print("Cat meows")
+
+
+# Objects
+dog = Dog()
+cat = Cat()
+
+dog.eat()
+dog.bark()
+
+cat.eat()
+cat.meow()        
+#--------------------------------------------#
+
 # 3. Polymorphism 
 # in python method overriding is possibal and supported
 # and method overloading are not supported
