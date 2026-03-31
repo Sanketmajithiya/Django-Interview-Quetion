@@ -194,6 +194,7 @@ obj.show('Ankush')
 obj.show('Ankush','majithiya')         
    
 #-----------------methodOverriding---------------#        
+👉 super() ek function hai jo parent class ke methods ya properties ko child class me access karne ke liye use hota hai
 
 class A: # parent
     def Disp(self):
@@ -206,8 +207,7 @@ class B(A):
         print("This is child class method")
         
 obj =B()
-obj.Disp()                
-        
+obj.Disp()                       
 #---------------#----------------#----------------#
 
 # Abstractioin abc(abstract base classes)
