@@ -274,18 +274,17 @@ print("outside of class",obj._A__b)
 
 #---------------#----------------#----------------#
 # Decorater
-def my_decorater(fx):
+def login_required(func):  # decorator
     def wrapper():
-        print("good morning")
-        fx()
-        print("Thanks for using This function")
+        print("checking login")
+        func()
     return wrapper
-        
-@my_decorater
-def greet():
-    print('hello world')
 
-greet()
+@login_required # decorater apply kiya iska name hum @my_decorater bhi rakh sakte hai login_required ki bajay
+def dashboard(): # orioginal func
+        print("Welcome to dashboard")
+
+dashboard() 
 #---------------#----------------#----------------#-------
 # getter syntaxt:-@property laga di to woh getter ban gaya.[in python are methods that are used to access the values of an object's properties.] New Method baan rahe jo behave kar raha hai like a property.
 #**Actualy use :- kisi function ki return value ko Ek object ki property ki Tarah istmaal kar sakte hai And usko set bhi kar sakte hai 
