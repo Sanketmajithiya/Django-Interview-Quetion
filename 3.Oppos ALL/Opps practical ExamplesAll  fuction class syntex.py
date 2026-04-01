@@ -286,6 +286,18 @@ def dashboard(): # orioginal func
 
 dashboard() 
 #---------------#----------------#----------------#-------
+# genrater :- 
+
+def sqr(n):
+    for i in range(1,n+1):
+        yield i*i
+
+a = sqr(3)
+print(next(a))        
+print(next(a))        
+print(next(a)) 
+
+#---------------#----------------#----------------#-------
 # getter syntaxt:-@property laga di to woh getter ban gaya.[in python are methods that are used to access the values of an object's properties.] New Method baan rahe jo behave kar raha hai like a property.
 #**Actualy use :- kisi function ki return value ko Ek object ki property ki Tarah istmaal kar sakte hai And usko set bhi kar sakte hai 
 
