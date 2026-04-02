@@ -84,13 +84,17 @@ print(obj2.__dict__)
 #         print("BOWW!!")
         
 # class Cat(Animal,Dog):
-#     def speak(self):
+#     def meow(self):
 #         print("Meow!!")        
         
-# myAnimal = Cat() # Cat ke under sab Ajyega Animal and Dog
+# dog =  Dog()
+# cat = Cat()
 
-# myAnimal.speak()       
-# myAnimal.walk()       
+# cat.speak()
+# dog.walk()
+
+# cat.speak()
+# cat.meow()      
 
 #--------------------------------------------#
 # (multi-level inh.)
