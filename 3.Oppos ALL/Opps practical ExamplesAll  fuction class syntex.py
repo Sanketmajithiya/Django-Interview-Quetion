@@ -83,7 +83,7 @@ print(obj2.__dict__)
 #     def walk(self):
 #         print("BOWW!!")
         
-# class Cat(Animal,Dog):
+# class Cat(Animal,Dog): # Cat = Animal + Dog dono ka combination
 #     def meow(self):
 #         print("Meow!!")        
         
@@ -131,8 +131,8 @@ class Dog(Animal):
     def bark(self):
         print("Dog barks")
 
-class Cat(Animal):
-    def meow(self):
+class Cat(Animal):     # 👉 Dog aur Cat alag-alag children hai 
+    def meow(self):    # 👉 ❌ Cat ko Dog ka method nahi milega
         print("Cat meows")
 
 
