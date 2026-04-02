@@ -102,11 +102,11 @@ list is data sturcture that used to collection of items
 """
 * 
 * *
-* * *
+* * *                        #(1)
 * * * *
 
-# """  
-  
+# """  (1st code )
+
 # for i in range (1,5):
 #     for j in range(1,5):
 #         if j<=i:
@@ -116,11 +116,11 @@ list is data sturcture that used to collection of items
 """
     *
    **
-  ***
+  ***              # (2)
  ****
 *****      
  
-# """
+# """ (2nd pattern)
 # for i in range(1,6):
 #     for j in range(1,6):
 #         if j>=6-i:    # 6 likhoge to 5 rows aayegi complete triangle lagega
@@ -130,29 +130,28 @@ list is data sturcture that used to collection of items
 #     print()   
 
 
-"""
+""" 
 ****
-***
+***             # (3)
 **
 *
 
-# """
+# """  (3rd pattern)
 # for i in range(1,5):
 #     for j in range(1,5):
 #         if j<=5-i:
 #             print("*",end="")
 #         else:    
 #             print("",end="")
-#     print()        
+#     print()     
+
 """
-****
- ***
-  **
+**** 
+ ***            #(4)
+  ** 
    *
-
-
-
-"""
+   
+"""   (4th pattern)
 
 # for i in range(1,5):
 #     for j in range(1,5):
@@ -170,7 +169,7 @@ list is data sturcture that used to collection of items
  *****
 *******
 
-"""    
+"""     (5th)
 for i in range(1,5):
     for j in range(1,8):
         if j>=5-i and j<=3+i:
@@ -181,11 +180,11 @@ for i in range(1,5):
 
 """
    *******
-    *****
+    *****              (6)
      ***
       *  
 
-    """
+    """  (6th code)
 for i in range(1,5):
     for j in range(1,8):
         if j>=i and j<=8-i:
@@ -198,15 +197,15 @@ for i in range(1,5):
    *   
   ***
  *****
-*******
-*******
+*******      # (7)
+*******  
  *****
   ***
    *
 
    
 
-"""                  
+"""  (7)                 
             
 for i in range(1,5):
     for j in range(1,8):
@@ -222,11 +221,6 @@ for i in range(1,5):
         else:
             print(" ",end="")
     print()             
-
-
-
-
-
 
 
 
@@ -400,8 +394,3 @@ objects like
 #     print(fname + ' ' + lname)
 
 # fullname('sanket', 'majithiya')
-
-
-
-
-
