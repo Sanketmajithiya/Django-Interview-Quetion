@@ -121,9 +121,9 @@ list is data sturcture that used to collection of items
 *****      
  
 # """
-# for i in range(1,5):
-#     for j in range(1,5):
-#         if j>=5-i:
+# for i in range(1,6):
+#     for j in range(1,6):
+#         if j>=6-i:    # 6 likhoge to 5 rows aayegi complete triangle lagega
 #             print("*",end="")
 #         else:    
 #             print(" ",end="")
