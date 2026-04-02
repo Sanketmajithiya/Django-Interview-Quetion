@@ -83,18 +83,15 @@ print(obj2.__dict__)
 #     def walk(self):
 #         print("BOWW!!")
         
-# class Cat(Animal,Dog): # Cat = Animal + Dog dono ka combination
+# class Cat(Animal,Dog):   # Multiple inheritance ka main point hai → ek child object se sab access ho
 #     def meow(self):
 #         print("Meow!!")        
         
-# dog =  Dog()
 # cat = Cat()
 
-# cat.speak()
-# dog.walk()
-
-# cat.speak()
-# cat.meow()      
+# cat.speak()   # Animal se
+# cat.walk()    # Dog se
+# cat.meow()    # Cat ka apna 
 
 #--------------------------------------------#
 # (multi-level inh.)
