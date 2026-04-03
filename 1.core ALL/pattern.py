@@ -193,11 +193,10 @@ for i in range(1,5):
     print()            
             
 """
-   *   
+   *
   ***
  *****
-*******      # (7)
-*******  
+*******           #(7) pattern
  *****
   ***
    *
@@ -206,20 +205,23 @@ for i in range(1,5):
 
 """  (7)                 
             
+# upper
 for i in range(1,5):
     for j in range(1,8):
         if j>=5-i and j<=3+i:
+            print('*',end='')
+        else:
+            print(" ",end='')    
+    print() 
+
+# lower (FIXED)
+for i in range(3,0,-1):
+    for j in range(1,8):
+        if j>=5-i and j<=3+i:   # 🔥 same logic use karo
             print("*",end='')
         else:
-            print(" ",end='')
-    print()         
-for i in range(1,5):
-    for j in range(1,8):
-        if j>=i and j<=8-i:
-            print("*",end="")
-        else:
-            print(" ",end="")
-    print()             
+            print(' ',end="")
+    print()      
 
 
 
