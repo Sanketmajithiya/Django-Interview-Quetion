@@ -99,7 +99,7 @@ list is data sturcture that used to collection of items
 # tuple- orderd, immutable,indexing,slicing, duplicate value are allowed
 
 
-"""
+"""  video link  for better explaination or understanding :- https://www.youtube.com/watch?v=gB04pfMfDh4&list=PL7ersPsTyYt3VGSO8E-XL3dPNg17LK0yk
 * 
 * *
 * * *                        #(1)
