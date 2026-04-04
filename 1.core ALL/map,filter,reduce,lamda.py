@@ -59,21 +59,51 @@ its Anomus function in python jiska name nahi hota hum usko function ke under fu
 # print((lambda x,y: x+y)(5,5))
 
 
-# filter syntax :- filter(function, iterable)
-        
+#----------#-----------#---------------#--------------#------------
+
+# Map ,filter, reduce ,lambda interview que and answers 
+
+"""
+Map:- function humara Efficancy purpose ke liye use hota hai map ko de do pehle woh function ka name and fir woh list jo har eliment me woh function apply karna chahte ho...
+"""
+#----------#-----------#---------------#--------------#------------
+
+# map Efficency puropse ke liye use hota hai...
+
+# syntax map(function, itrable)
+l = [1,2,3,4,5,6,7,8,9,10]        
+
+z =list(map(lambda x: x*x,l))
+
+print(z)     
+
+#----------#-----------#---------------#--------------#------------
+
+# filter syntax:- filter(function,itrable)
 l = [1,2,3,4,5,6,7,8,9,10]
 
 z = list(filter(lambda x: x %2==0,l))
 
-print(z)            
+print(z)
+#----------#-----------#---------------#--------------#------------
 
-# Map function syntax:- map(function, iterable)
-l = [1,2,3,4,5,6,7,8,9,10]
+# reduce()
+from functools import reduce
+l = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-z = list(map(lambda x: x*x,l))
+z = reduce(lambda x, y: x + y, l)  # Sum all numbers
+print(z)  # Output: 55
 
-print(z)            
+#----------#-----------#---------------#--------------#------------
 
+""" What is lamda function ...?
+
+its Anomus function in python jiska name nahi hota hum usko function ke under function pass kar sakte hai ..  
+"""
+
+square = lambda x: x * x
+print(square(5))
+#----------#-----------#---------------#--------------#------------
 
 try: 10/5 
 
