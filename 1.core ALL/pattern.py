@@ -98,6 +98,15 @@ list is data sturcture that used to collection of items
 # set - unorderd,unindexing,dupalicate value are not allowed. mutable
 # tuple- orderd, immutable,indexing,slicing, duplicate value are allowed
 
+#--------------#------------------#------------------#------------------#----------------#-------------------------#-------------------------------#--------------------#
+# steps pattern 
+"""
+ i =  row 
+ j =  column 
+ end='' print ("*" hai ye automatically line change karta hai. ager esa naa ho line change naa ho uske liye hum end="" use karte hai 
+"""
+
+#--------------#------------------#------------------#------------------#----------------#-------------------------#-------------------------------#--------------------#
 
 """  video link  for better explaination or understanding :- https://www.youtube.com/watch?v=gB04pfMfDh4&list=PL7ersPsTyYt3VGSO8E-XL3dPNg17LK0yk
 * 
@@ -162,7 +171,8 @@ list is data sturcture that used to collection of items
     
     
 
-"""
+""" - Ager if condtion True hogi to star print hoga 
+
    *   
   ***
  *****
