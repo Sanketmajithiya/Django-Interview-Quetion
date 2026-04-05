@@ -11,7 +11,7 @@ print(z)
 #----------#-----------#---------------#--------------#------------
 # Filter:- jaise naam se hi pata chalta hai filter karna. Jaise hum paani ko filter karte hain jisme ganda alag ho jata hai aur saaf paani milta hai, waise hi filter function me sirf wahi data milta hai jo condition satisfy karta hai. 
 # filter syntax:- filter(function,itrable)
-l = [1,2,3,4,5,6,7,8,9,10]
+l = [1,2,3,4,5,6,7,8,9,10,11,12]
 
 z = list(filter(lambda x: x %2==0,l))
 
