@@ -1,64 +1,3 @@
-# map function use hota efficance propse ke liye map ko pehle de do function ka name  fir de  do woh list har eliment me ye function apply karna chate ho...
-    
-def cube (x):
-    return x * x * x
-
-print(cube(2))
-
-
-l = [1, 2, 4, 6, 4,3]
-# newl = []
-# for item in l:
-#   newl.append (cube(item)) 
-
-newl = list(map(cube,l)) # function name(cube) and list (l) aapi directly function ke under ki arrguments ko run kar dii...
-print(newl)
-
-
-# FILTER  
-def filter_function(a):
-    return a>4
-
-newnewl = filter(filter_function)
-
-# reduce()
-from functools import reduce
-l = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-
-z = reduce(lambda x, y: x + y, l)  # Sum all numbers
-print(z)  # Output: 55
-
-
-""" What is lamda function ...?
-
-its Anomus function in python jiska name nahi hota hum usko function ke under function pass kar sakte hai ..  
-"""
-
-# def double(x):
-#     return x*2
-
-# def appl(fx, value):
-#     return 6 + fx(value)
-
-
-# double = lambda x: x*2
-# cube =   lambda x: x*x*x
-# avg =   lambda x, y, z: (x + y+z) / 3
-
-# print(double(5))
-# print(cube(5))
-# print(avg(3,5,10))
-# print(appl(lambda x: x* x* x, 2))
-
-
-
-# def add(x,y):
-#     return (x+y)
-# print(add(5,5))
-
-# print((lambda x,y: x+y)(5,5))
-
-
 #----------#-----------#---------------#--------------#------------
 
 # Map ,filter, reduce ,lambda  **(interview que and answers) 
@@ -103,6 +42,37 @@ its Anomus function in python jiska name nahi hota hum usko function ke under fu
 square = lambda x: x * x
 print(square(5))
 #----------#-----------#---------------#--------------#------------
+
+""" What is lamda function ...?
+
+its Anomus function in python jiska name nahi hota hum usko function ke under function pass kar sakte hai ..  
+"""
+
+# def double(x):
+#     return x*2
+
+# def appl(fx, value):
+#     return 6 + fx(value)
+
+
+# double = lambda x: x*2
+# cube =   lambda x: x*x*x
+# avg =   lambda x, y, z: (x + y+z) / 3
+
+# print(double(5))
+# print(cube(5))
+# print(avg(3,5,10))
+# print(appl(lambda x: x* x* x, 2))
+
+
+
+# def add(x,y):
+#     return (x+y)
+# print(add(5,5))
+
+# print((lambda x,y: x+y)(5,5))
+
+
 
 try: 10/5 
 
