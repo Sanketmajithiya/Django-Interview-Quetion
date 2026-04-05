@@ -1,11 +1,5 @@
-#----------#-----------#---------------#--------------#------------
-
 # Map ,filter, reduce ,lambda  **(interview que and answers) 
 
-"""
-Map:- function humara Efficancy purpose ke liye use hota hai map ko de do pehle woh function ka name and fir woh list jo har eliment me woh function apply karna chahte ho...
-"""
-#----------#-----------#---------------#--------------#------------
 # map Efficency puropse ke liye use hota hai  map ko de do pehle woh function ka name and fir woh list jo har eliment me woh function apply karna chahte ho...
 # syntax map(function, itrable)
 l = [1,2,3,4,5,6,7,8,9,10]        
