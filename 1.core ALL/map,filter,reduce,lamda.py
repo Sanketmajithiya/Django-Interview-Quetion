@@ -61,7 +61,7 @@ its Anomus function in python jiska name nahi hota hum usko function ke under fu
 
 #----------#-----------#---------------#--------------#------------
 
-# Map ,filter, reduce ,lambda interview que and answers 
+# Map ,filter, reduce ,lambda  **(interview que and answers) 
 
 """
 Map:- function humara Efficancy purpose ke liye use hota hai map ko de do pehle woh function ka name and fir woh list jo har eliment me woh function apply karna chahte ho...
