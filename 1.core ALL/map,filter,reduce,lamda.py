@@ -17,7 +17,15 @@ z = list(filter(lambda x: x %2==0,l))
 
 print(z)
 #----------#-----------#---------------#--------------#------------
-# Reduce:- reduce ka use hum tab karte hain jab hume poori list ko ek single value me convert karna ho. Yeh function har step me 2 elements ko combine karta hai aur final me ek hi result deta hai.
+
+# Reduce:- reduce kaa use hum tab karte hai jab hume puri list ko ek single value me convert karna ho yaani ye List ko ek single value me convert karta hai..
+# Ager or bolna hai to :- And ye function har step me 2 elements ko combine karta hai aur final me ek hi result deta hai... 
+# 👉 Reduce = Combine karte jao
+""" 
+l = [1,2,3,4]
+Ex:-  Step 1: 1 + 2 = 3  
+Step 2: 3 + 3 = 6  
+Step 3: 6 + 4 = 10 👉 Final output = 10 """
 
 # reduce()
 from functools import reduce
