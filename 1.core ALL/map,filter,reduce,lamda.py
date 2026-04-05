@@ -67,9 +67,7 @@ its Anomus function in python jiska name nahi hota hum usko function ke under fu
 Map:- function humara Efficancy purpose ke liye use hota hai map ko de do pehle woh function ka name and fir woh list jo har eliment me woh function apply karna chahte ho...
 """
 #----------#-----------#---------------#--------------#------------
-
-# map Efficency puropse ke liye use hota hai...
-
+# map Efficency puropse ke liye use hota hai  map ko de do pehle woh function ka name and fir woh list jo har eliment me woh function apply karna chahte ho...
 # syntax map(function, itrable)
 l = [1,2,3,4,5,6,7,8,9,10]        
 
@@ -78,7 +76,7 @@ z =list(map(lambda x: x*x,l))
 print(z)     
 
 #----------#-----------#---------------#--------------#------------
-
+# Filter:- jaise naam se hi pata chalta hai filter karna. Jaise hum paani ko filter karte hain jisme ganda alag ho jata hai aur saaf paani milta hai, waise hi filter function me sirf wahi data milta hai jo condition satisfy karta hai. 
 # filter syntax:- filter(function,itrable)
 l = [1,2,3,4,5,6,7,8,9,10]
 
@@ -86,6 +84,7 @@ z = list(filter(lambda x: x %2==0,l))
 
 print(z)
 #----------#-----------#---------------#--------------#------------
+# Reduce:- reduce ka use hum tab karte hain jab hume poori list ko ek single value me convert karna ho. Yeh function har step me 2 elements ko combine karta hai aur final me ek hi result deta hai.
 
 # reduce()
 from functools import reduce
