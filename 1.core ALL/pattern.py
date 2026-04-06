@@ -233,6 +233,42 @@ for i in range(3,0,-1):
             print(' ',end="")
     print()      
 
+#----------#-----------#---------- 8th pattern --------#--------------#------------ 
+"""
+1   
+12  
+123 
+1234
+
+"""
+
+for i in range(1,5):
+    for j in range(1,5):
+        if j<=i:
+            print(j,end="")
+        else:
+            print(' ',end="")    
+    print()
+
+#----------#-----------#---------- 9th pattern --------#--------------#------------
+
+"""
+54321
+4321 
+321  
+21   
+1    
+"""
+
+for i in range(1,5):
+    k = 6-i
+    for j in range(1,8):
+        if j<=6-i:
+            print(k,end="")
+            k-=1
+        else:
+            print(' ',end="")
+    print()            
 
 
 
