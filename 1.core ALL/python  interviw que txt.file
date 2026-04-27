@@ -44,7 +44,7 @@ Ans:- collection of python , represent {} carly bracis, key value pair combinati
 
 Q-8 what is string And string is mutable or immutable?.
 
-Ans:-  collection of charater that represent text represent "",''single invotedcoma , this is immutable
+Ans:-  sequence of charater that represent text represent "",''single invotedcoma , this is immutable
 
 Q-9 what is type conversion in python?
 
