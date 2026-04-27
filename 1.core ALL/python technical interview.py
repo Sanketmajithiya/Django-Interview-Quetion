@@ -32,7 +32,18 @@ for i in range(n):
     a = b
     b = c
     print(c)
-    
+
+# string ko reverse karna hai without using inbuilt method, using loop kar sakte ho 
+
+my_string = 'sanket'
+
+reverser_string = ""
+
+for i in my_string:
+    reverser_string = i + reverser_string 
+
+print(reverser_string)
+
 # List compareinsion(code ka size Dicrese hota hai Number of lines kaam hojati hai...)
 
 # 1. Basic List Comprehension Syntax:-
