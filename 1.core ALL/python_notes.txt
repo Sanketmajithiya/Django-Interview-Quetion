@@ -1,3 +1,5 @@
+INDEX:- 1.core python  2.OPPOS  3.API Related quetions (550 lines start)
+
 #----------------#-------------------#--------------------#-------------------#-------------------#----------------
 
 # Arithmetic Operators:- + (Addition),  - (Subtraction), * (Multiplication), / (Division) , % (Modulus - returns the remainder of a division) // (Floor Division) ** (Exponentiation) print(2**5) 2 ki power 
@@ -9,10 +11,13 @@
 
 # Membership Operators:-  in (True if a value is found in the sequence) not in (True if a value is not found in the sequence)
 
-# Bitwise Operators:-  & (Bitwise AND)| (Bitwise OR) ^ (Bitwise XOR) ~ (Bitwise NOT) << (Left shift) >> (Right shift)
+# Bitwise Operators:-  & (Bitwise AND) | (Bitwise OR) ^ (Bitwise XOR) ~ (Bitwise NOT) << (Left shift) >> (Right shift)
+
+# // floor division hai woh decimal ko hata deta hai yaani 3.333333 ese nahi aayeaga ❌  sirf 3 hi aayega ✅ piche kuch nahi aayega decimal ko hata dega wali values ko hata dega piche
+# % module ye sesh(शेष) nikalega  matlab jo remaing value hai woh nikalega ye naa ki percentage 
 
 1️⃣ AND Operator (and)
-👉 Dono condition True hongi tabhi result True aayega.
+👉 Dono condition True hongi tabhi result True aayega. 
 👉 Ek bhi False hua to result False.
 
 | Condition       | Result  |
@@ -35,7 +40,7 @@
 
 
 3️⃣ NOT Operator (not)
-👉 Ye result ko ulta kar deta hai.
+👉 Ye result ko reverse (ulta) kar deta hai.
 
 | Condition | Result  |
 | --------- | ------- |
@@ -43,17 +48,30 @@
 | not False | ✅ True  |
 
 
-
-
 # Bitwise operator:-  har ek individual bit ke uper operation ko perform karna 
-| Operator | Meaning               |                  |
-| -------- | --------------------- | ---------------- |
-| &        | Dono 1 ho tab 1       |                  |
-|          |                       | Ek bhi 1 ho to 1 |
-| ^        | Different ho to 1     |                  |
-| ~        | Reverse bits          |                  |
-| <<       | Multiply by 2 power n |                  |
-| >>       | Divide by 2 power n   |                  |
+| Operator | Meaning                |
+|----------|------------------------|
+| & (AND)  | Dono 1 ho tab 1        |
+| | (OR)   | Ek bhi 1 ho to 1       |
+| ^ (XOR)  | Different ho to 1      |
+| ~ (NOT)  | Reverse bits           |
+| <<       | Multiply by 2 power n  |
+| >>       | Divide by 2 power n    |
+
+<< (Left Shift) 👉 2 se multiply  simple isko << multiply by 2 bhi kehte hai... 
+5 << 1 = 10
+5 << 2 = 20
+
+>> (Right Shift) 👉 2 se divide
+8 >> 1 = 4
+8 >> 2 = 2
+
+| Type    | Base | Digits |
+| ------- | ---- | ------ |
+| Decimal | 10   | 0–9    |
+| Binary  | 2    | 0–1    |
+| Octal   | 8    | 0–7    |
+
 
 
 1️⃣ Decimal Number System (Base 10)
@@ -67,13 +85,6 @@
 
 3️⃣ Octal Number System (Base 8)
 👉 Isme digits hote hain: 0 se 7
-
-
-| Type    | Base | Digits |
-| ------- | ---- | ------ |
-| Decimal | 10   | 0–9    |
-| Binary  | 2    | 0–1    |
-| Octal   | 8    | 0–7    |
 
 
 # Identifiers:- python me identifier name hai jisse hum identifie karte hai jese variable ko,function ko,class ko,module or any other object. Us name ko identifier kehte hai 
@@ -111,14 +122,19 @@ Conventions:- naam likhne ka style.
 
 🔹 1️⃣ Pascal Case
 👉 Isme har word ka first letter capital hota hai
+👉 Example: MyNameIsSanket
+
 
 🔹 2️⃣ Camel Case
 👉 Isme first word small,
 baaki words ka first letter Capital hota hai.
+👉 Example: myNameIsSanket
+
 
 🔹 3️⃣ Snake Case
 👉 Isme sab small letters
 aur words ke beech me underscore _ hota hai. 
+👉 Example: my_name_is_sanket
 
 # variables:- python me variable ek name hai jo ki store karta hai value ko memory me in other languages Python is dynamically typed language hai, isliye variable kaa data type declare karne ki zarurat nahi hoti. Python khud runtime par type decide kar leta hai.
 
@@ -156,7 +172,7 @@ set, frozen set:-
 None type – NoneType
 Binary types – bytes, bytearray, memoryview
 
-**Explicit Data Type (Type Casting) **
+**Explicit Data Type (Type Casting) **  Type casting ka matlab hai ek data type ko manually dusre data type me convert karna.
 Explicit ka matlab hota hai manually.
 
 Jab hum khud variable ka data type change karte hain using functions like:
@@ -190,19 +206,25 @@ Example:- result = "Pass" if marks >= 40 else "Fail"
 python me traditional `switch` nahi hota.
 🔹 Lekin Python 3.10+ me **match-case** aaya hai:
 ✔ Isko Python ka **switch replacement** bol sakte hain.
+👉 match ka use multiple conditions check karne ke liye hota hai
+🎯 Simple language me:- 
+“match ek value ko multiple cases se compare karta hai aur jo match hota hai uska code run karta hai.”
 
-✅ `if-elif-else` Ladder Kya Hai?
+✅ `if-elif-else` Ladder Kya Hai? isme dono lines aapse me puri connected hai jese first line ke 2 part sath me hi khtm hote hai and 2nd line me bhi dono ek sath hi bole jaate hai and khtm kiye jaate hai.
 
 Python me **"if-elif-else" ladder** ek series of conditional statements hoti hai jo **complex decision making** ke liye use ki jati hai.
 
 Yeh humein multiple conditions ko **ek ke baad ek check karne** ki suvidha deti hai aur jis condition ka result True hota hai, uska code execute ho jata hai.
+mere wala :- 
+Python me **"if-elif-else" ladder** ek series of conditional statements hoti hai jo **complex decision making** ke liye use ki jati hai.
+ismein multiple conditions ko **ek ke baad ek check kiya** jata hai jo condition True hogai, waha se humara code execute ho jata hai.
+
+# what is module:- it's file containing statements jiske under humare multiple classes functions and variables kaa collection hota hai, jisse hum dusre programs me ‘import’ karke reuse kar sakte hai. Ex:- math ,random ,time,datetime
 
 
-# what is module:- it's file contaning statments jiske under multiple classes then functions variables unki collections iss tarike se store ki huvi hoti hai Taaki hume Advantages mile sake joo kaam same kare usko sath me daal sake Ex:- math ,random ,time,datetime
+module :- math,time,random,datetime,copy,decimal,json,os,sys,therading,zipfile,uuid
 
-module :- math,time,random,datetime,copy,decimal,json,,os,sys,therading,zipfile,uuid
-
-pakages:- collection of module file Ex:- pygame,Django RESt framwork,FastAPi,celery,scrapy,beautiful soap 
+packages:- collection of module file Ex:- pygame,Django RESt framwork,FastAPi,celery,scrapy,beautiful soap 
 
 Library:- Numpay,pandas,requests,pillow,pytest,slenuim,tensaflow
 
@@ -266,14 +288,15 @@ self.age
 # global:-out side of class we can define this variable 
 
 
-# 1. what is function 2. what is python keywords and wat are the keywords 3. what are global variables and local variables 4.what is type con ersion in python?   
+# 1. what is function 2. what is python keywords and wat are the keywords 3. what are global variables and local variables 4.what is type con version in python?   
 
 # what is function:-  
 function is reusable code that perform specific task function ko likha jata hai def keyword ki help se
-synax:- 
+synax:- [: ko colon (कोलन)kehte hai.]
 def function_name(parameters):
 With return: Ye value return karega jo store bhi ho sakti hai.
 func call karna:- Ab ye line likhte hi function ka code execute hoga. ----> greet() <---  isse bolte hai call karna 
+
 
 # def greet():
 #     print("hello sanket")
@@ -284,14 +307,14 @@ func call karna:- Ab ye line likhte hi function ka code execute hoga. ----> gree
 👉 Function call karna = function ko run/execution ke liye use karna
 # data-collection:- 
 
-# dict:- python ke under dictionary built in data type hai jo ki use hota hai key and value pair me jo ikha jata hai Curly braces {} me and woh mutable hai jisme key hai woh humari unique hoti hai And value mutable hoti hai dictionary hai woh unnorderd,Unindexed,duplicate values are not allowed 
-# methods:- get,key,value,update,items,clear,copy, pop,popitems,fromkeys,setdefault
+# dict:- python ke under dictionary built in data type hai jo ki use hota hai key and value pair me jo ikha jata hai Curly braces {} me and dictionary woh mutable hai jisme key hai woh humari unique hoti hai And value mutable hoti hai dictionary hai woh unnorderd,Unindexed,duplicate values are not allowed... 
+# methods:- get,key,value,update,items,clear,copy, pop,popitems,fromkeys,setdefault...
 
-# setdefault:- Sir, setdefault() dictionary method hai jo kisi key ko check karta hai. Agar key exist karti hai to uski value return karta hai. Agar nahi karti to default value ke saath dictionary me add kar deta hai
+# setdefault:- Sir, setdefault() dictionary method hai jo kisi key ko check karta hai. Agar key exist karti hai to uski value return karta hai. Agar nahi karti to default value ke saath dictionary me add kar deta hai...
 
-# List:- orderd,mutable,indexing,slicing,duplicate values are allowed 
+# List:- orderd,mutable,indexing,slicing,duplicate values are allowed... 
 python me list data structure hai jo use hota hai collection of items ko store karne ke liye list likhi jaati hai [] square bracket me and ye  orderd hai and mutable hai matlab runtime pe insert update delete karva sakte hai 
-slicing me formula hai start+stop+step  <--- step yaa ni tumhe utne steps jump karne hai -revse side and pluse hoi to 0 (zero) se  start 0,1,2,3,4,5,etc (minus) -1,-2,-3,-4,-5 etc 
+slicing me formula hai start+stop+step  <--- step yaa ni tumhe utne steps jump karne hai -revse side and pluse hoi to 0 (zero) se  start 0,1,2,3,4,5,etc (minus) -1,-2,-3,-4,-5 etc.. 
 
 append:-  end of the list single element ko add kar sakte hai 
 extend:-  end of the list multiples elements add hote hai tod ke add karta hai 
@@ -313,9 +336,9 @@ Tum confidently bolo: Kyuki string iterable hoti hai.
 
 ['python','s','w','i','f','t']
 
-# dict:-  pop:- dict me Dictionary Key dena compulsory hai usko remove karta hai 
-# dict:-  popietms :-  popitems hamesha dict last keyvalue pair ko remove karta hai usme arguments nahi pass kar sakte woh automatically last key value pair ko hi remove karta  hai 
-# list kaa pop:- Default last element remove karta hai
+# dict:-  pop:- dict me Dictionary Key dena compulsory hai usko remove karta hai 👉 Specific key ko remove karta hai ✔️ Key tum khud decide karte ho
+# dict:-  popietms :- popitems hamesha dict last keyvalue pair ko remove karta hai usme arguments nahi pass kar sakte woh automatically last key value pair ko hi remove karta  hai 
+# list kaa pop:- Default last element remove karta hai8
 # set pop:- pop() random element remove karta hai
 # list remove:- woh value ke basis pe delete karta hai naa ki index ke basis pe 
 Ex:- ['a','b','c'].remove('b')   # value 'b' remove karega ✅
@@ -330,8 +353,8 @@ print(a)
 1️⃣ Set me duplicate values allow nahi hoti:- {1,2,3,4,5,6,1,2,4,7}
 Actually banega:- {1,2,3,4,5,6,7} :- Duplicate 1,2,4 remove ho jayenge automatically.
 # frozen set:- immutable hota hai isme changes nahi kar sakte hum 
-| Feature  | set   | frozenset |
-| -------- | ----- | --------- |
+| Feature  | set     | frozenset |
+| -------- | -----   | --------- |
 | Mutable  | ✅ Yes | ❌ No      |
 | add()    | ✅     | ❌         |
 | remove() | ✅     | ❌         |
@@ -339,7 +362,36 @@ Actually banega:- {1,2,3,4,5,6,7} :- Duplicate 1,2,4 remove ho jayenge automatic
 # Normal set hashable nahi hota,Isliye set ko dictionary key nahi bana sakte.
 # Lekin frozenset hashable hota hai ✅ Isliye use dictionary key bana sakte ho.
 
+# Just_knowdlege ke liye 
+🎯 Final Interview Trick (Golden Line)
+👉 {} → dict Ager khali hoga to Dict kehl laayega by default naa ki set
+{1,2} → set # Ager kuch curly brasis me  likha hoga tabhi woh set hoga
+{a:1} → dict
+(1,) → tuple # , coma kiya hoga tab woh tuple keh laayega  Ager sirf (1) hoga and type int aayega uska 
+[1,2] → list
+
+Ex:- 
+data = (1)
+print(type(data))
+👉 Output: <class 'int'>
+
+✅ () → Empty Tuple
+data = ()
+print(type(data))
+👉 Output: <class 'tuple'>
+
 # Tuple : ordered, immutable, indexing, slicing, duplicate values are allowed 
+
+data = (1)
+print(type(data))
+✅ Answer:
+<class 'int'>
+
+❗ Tuple nahi hai
+
+👉 Correct tuple:
+
+data = (1,)
 
 1️⃣ Positional Parameter:- Ye order ke basis par values leta hai.Position change karoge to result change ho sakta hai.
 Ex:- 
@@ -369,9 +421,18 @@ Output:Sanket 22
 
 # *for loop:- Jab hume pata ho kitni baar repeat karna hai. 
 # For loop ka use tab karte hain jab hume fixed number of iterations karni hoti hain ya kisi sequence jaise (list, tuple, string ya dictionary) par iterate karna ke liye hota hai
+simple:-👉  For loop iteration based hoti hai. Jab hume pata hota hai ki kitni baar loop chalana hai, tab hum for loop ka use karte hai.
+For loop
+for i in range(5):
+    print(i)
 
 # while loop:- Jab tak condition true rahe tab tak chalega.
 # while loop condition based hota hai.While loop tab use hota hai jab tak ek condition true rehti hai. Jab condition false ho jaati hai tab loop stop ho jaata hai. Isme iterations ka exact count pehle se pata hona zaroori nahi hota
+simple While loop:- While loop condition based hoti hai. Jab tak condition true rehti hai tab tak loop chalta hai, aur jaise hi condition false hojati hai, loop stop ho jata hai.
+i = 0
+while i < 5:
+    print(i)
+    i += 1
 
 # short diffrence:- For loop fixed iterations ke liye use hota hai, jabki while loop condition based hota hai
 
@@ -381,11 +442,9 @@ try:- Yaha wo code likhte hai jisme error aane ka chance ho.
 
 except:- Agar error aa jaye to usko handle karne ke liye ye block run hota hai.
 
-else:- Agar koi error nahi aaya to ye block run hota hai.Ex:- kuch print kara naa hai ki successfully complted..!!
-esa kuch msg show karne user ko 
+else:- Agar koi error nahi aaya to ye block run hota hai.Ex:- kuch print kara naa hai ki successfully complted..!! ya normal code bhi likh sakte hai.
 
 finally:- Ye block hamesha run hota hai, chahe error aaye ya naa aaye. 
-
 
 Assert:- 
 assert ka use hum program me condition check karne ke liye karte hai.
@@ -423,12 +482,12 @@ Saare matching patterns ki list return karta hai
 4️⃣ re.sub()
 String me pattern ko replace karta hai
 
-# -------------#--------------#-------------------OPPOS--------------------#-------------------#-------------#
+# -------------#----------------#------------------OPPOS------------Object-Oriented Programming (System) ------#---------#
 # 1️⃣ Class :- Class ek blueprint hai jisse objects create kiye jate hai. Class ke andar attributes (variables) aur methods (functions) define kiye jate hai.
 
-Example idea: for example hum koi bike ya car bana te hai to usse pehle uska blue print ready karte hai.usse yaani ki kesi hogi uske baad hum bike ko actual me bana naa start karte hai car kaa Design 
+Example idea: for example hum koi bike ya car bana te hai to usse pehle uska blue print ready karte hai.usse yaani ki kesi hogi  usme kya kya functionality's hogi etc uske baad hum bike ko actual me bana naa start karte hai car kaa Design 
 # -------------#--------------#-------------------Objects--------------------#-------------------#-------------#
-# 2️⃣  Object:- # simple:- object ek real world entity hai  Ex:- jo jo bhi chize hume touch yaa dekhb sakte hai woh jese table,car,bike,table etc...
+# 2️⃣  Object:- # simple:- object ek real world entity hai  Ex:- jo jo bhi chize hume touch yaa dekhb sakte hai woh jese table,car,bike,Fan etc...
 class Student:
     def show(self):
         print("Hello")
@@ -463,7 +522,8 @@ A → B → C
 super() ka use parent class ke methods ko child class se call karne ke liye hota hai.
 # -------------#--------------#-------------------polymorphism--------------------#-------------------#------------#
 # polymorphism(many-forms) :-Polymorphism ka matlab hota hai "one name, multiple forms". Ek hi function ya method different objects par different tarike se behave kare,to use Polymorphism bolte hai.
-
+# 👉 Poly = Many (bahut)
+# 👉 Morphism = Forms (forms / shapes)
 # Simple language me:- 
 # Ek hi function ya method alag-alag objects par alag tarike se kaam kare to use Polymorphism bolte hai.
 
@@ -692,7 +752,6 @@ Example: /products?ordering=price
 ---
 # 25. What is Nested Serializer?
 👉 Serializer ke andar dusra serializer (relation handle karne ke liye)
-
 
 
 refrence count 
