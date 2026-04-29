@@ -485,6 +485,243 @@ Saare matching patterns ki list return karta hai
 4️⃣ re.sub()
 String me pattern ko replace karta hai
 
+Interview Realted-quetions:- 
+1. Deep vs Shallow copy
+
+👉 Shallow = reference copy 👉 Sirf outer object copy hota hai
+👉 Andar ke elements ka reference same rehta hai
+import copy 
+
+a = [[1,2],[3,4]]
+b = copy.copy(a) # Shallow copy
+
+b[0][0] = 100
+
+print(a)
+
+👉 Output:- [[100, 2], [3, 4]]
+
+
+👉 Deep = actual copy (independent)
+Pure object + inner objects sab copy hote hai
+👉 Completely independent
+
+import copy
+
+a = [[1,2],[3,4]]
+b = copy.deepcopy(a)
+
+b[0][0] = 100   # ✔ correct
+
+print(a)
+
+🎯 Output:- [[1, 2], [3, 4]]
+---
+
+### 2. *args & **kwargs
+
+👉 `*args` = multiple positional arguments
+👉 `**kwargs` = multiple keyword arguments
+
+---
+
+### 3. Memory management video link:-  https://www.youtube.com/watch?v=F5XRVPioUI8
+
+👉 Reference counting + Garbage collector
+
+🎯 Interview me aise bol 👇
+Python automatically memory manage karta hai using reference counting aur garbage collection. Jab object ka use nahi hota to Python uski
+memory free kar deta hai
+
+1. Reference Counting (Main concept)
+
+👉 Har object ke paas ek count hota hai
+ki kitni jagah use ho raha hai
+
+Python me har object track karta hai ki kitne variables usko use kar rahe hai. Jab koi bhi variable us object ko use nahi karta (count 0 ho jata hai), to Python automatically uski memory free kar deta hai.
+
+a = 10
+b = a
+
+👉 Ab:
+
+a bhi 10 use kar raha hai
+b bhi 10 use kar raha hai
+
+➡️ Reference count = 2
+
+👉 Jab:
+
+a = None
+b = None+
+
+➡️ Reference count = 0
+➡️ Python automatically memory free kar deta hai
+💡 Real samajh :- 👉Ye Python ka automatic memory cleaning system hai
+
+Types of memory:- python me 2 types ki memory hoti hai 1) stack memory 2)private Heap memory
+
+1) stack memory:- jitne bhi humare references hote hai yaa jitne bhi hum methods difine karte hai yaa jitne bhi methods ko hum call define karte hai woh sab ki sab chize stack memory me jaake stor hoti hai...
+2) Private Heap Memory:- wahi pe hum koi bhi particular value ko store karna chahiye yaa kabhi bhi kisi object ko kahi pe store karna chahe to uske liye hume private heap memory ki jarrorat hoti hai...
+
+Ex:- x = 5
+
+x:- stack memory store hoga 
+5:- private heap Memory me jaake stor hoga yaani RAM me 
+
+Example:- 
+x = 5 
+
+print(type(x)) # <class 'int'>
+print(id(x)) # 140714612116024
+
+important And Also functions sare humare stack memory me hi aate hai...
+
+Reference counting:- jab bhi koi object dead object hojata hai to woh object Garbage collector me chala jata hai
+reference counting internally woh count karta rehta hai ki python objects ko internally kitne variables yaa kitne references
+dawara refer kiya jaa raha hai..And koi bhi object ko koi bhi refer nahi kar raha hota to woh Garbage collector me chali jaati hai
+
+quetions puch te hai what do you mean bt duck typeing and why python called dynamically type programming:- 
+Ans:- kabhi bhi hum woh x ko x me refrence karte hai yaa Y ko Y me refer karte hai
+x = 
+
+---
+
+### 4. List comprehension
+
+simple one line Answer👉 Short way to create list
+---> List comprehension Python me ek short aur easy tareeka hai list banane ka, jisme hum ek hi line me loop aur condition use karke list create kar sakte hai.”
+
+```python
+[i for i in range(5)]
+
+### 5. self
+
+👉 Current object reference
+
+---
+
+### 6. Class vs Static method
+
+* Class method → class access (`cls`)  👉 Class ke saath kaam karta hai
+
+* Static method → independent
+👉 Class se related hota hai but
+👉 class ya object se koi lena dena nahi
+
+---
+
+### 7. Access modifiers
+
+* Public → normal  👉 Sab jagah se access ho sakta hai...
+* Protected → `_var`  bhar se access kiye jaa sakte hai or sub class se access kiye jaa sakte hai yaani child se access kiye jaa sakte hai.. 
+* Private → `__var`  👉 bhar se access nahi kiya jaa sakte 👉 Direct access nahi hota or 👉 Name mangling hota hai...
+
+what is name mangling:-  👉 Python me jab jum kisi variable ko double underscore (__) se start karte hai
+➡️ Python uska naam internally change kar deta hai
+
+👉 Is process ko Name Mangling kehte hai
+
+👉 Tu ne likha: 
+__x
+
+👉 Python ne internally bana diya:   
+_A__x
+
+➡️ Ye hi hai Name Mangling
+🎯 Purpose kya hai?:-
+👉 Direct access rokna
+👉 Variable ko “private jaisa” banana
+---
+### 9. Closure****
+👉 Inner function jo outer variables use kare
+---
+### 10. Lambda
+👉 Anonymous function
+```python
+lambda x: x+1
+```
+### 11. Multithreading + GIL
+
+👉 Python me GIL ek time me ek thread run hone deta hai (CPU-bound me limitation)
+Multithreading kya hota hai?:- 👉 Ek hi program me multiple kaam ek saath karna
+👉Ex:-File download ho rahi hai
+Saath me tu UI use kar raha hai
+➡️ Ye multithreading hai
+
+Python me multithreading I/O-bound tasks ke liye best hai, aur CPU-bound tasks ke liye multiprocessing use karte hai.
+---
+
+### 12. Multiprocessing vs Multithreading
+# multithreading and multiprocessing both are used to achive multitasking
+
+
+👉 CPU tasks → multiprocessing
+👉 I/O tasks jese(file,API,DB) → multithreading
+
+🔹 Multithreading kya hota hai?
+Multithreading matlab ek hi process ke andar multiple threads (chhote tasks) ek saath run hona.
+
+Same memory share karte hain
+Fast hota hai (lightweight)
+Mostly use hota hai jab kaam I/O based ho (jaise file read, network call)
+
+👉 Example:- Ek app jo ek hi time pe download bhi kar raha hai aur UI bhi smooth chala raha hai.
+
+🔹 Multiprocessing kya hota hai?
+
+Multiprocessing me ek time par multiple processes parallel run hote hai, isliye ye CPU-bound tasks ke liye best hota hai.
+
+Har process ka apna memory hota hai
+Heavy hota hai but powerful
+Use hota hai jab kaam CPU intensive ho (jaise calculations, AI models)
+
+👉 Example:
+Video rendering, heavy data processing, gaming engines.
+
+Multithreading = ek hi kitchen mein 5 log milke kaam kar rahe hain
+Multiprocessing = 5 alag kitchens mein alag teams kaam kar rahi hain
+
+just knowledge:- I/O (Input / Output)
+
+---
+
+### 13. Context Manager
+
+👉 `with` use hota hai (auto resource handling)
+
+---
+
+### 14. Virtual Environment
+
+👉 Isolated Python environment
+👉 Virtual Environment ek isolated environment hota hai jisme hum apne project ke dependencies (libraries) alag se install karte hai.
+
+👉 Maan lo:
+
+Project A → Django 3 chahiye
+Project B → Django 5 chahiye
+
+👉 Agar same system me install kare:
+➡️ conflict ho jayega 
+
+👉 Isliye:
+➡️ har project ke liye alag environment banate hai
+
+---
+
+### 15. Duck Typing
+👉 Object type nahi, behavior important
+👉 Python me object ka type important nahi hota
+👉 uska behavior (method/feature) important hota hai
+---
+
+### 16. Monkey Patching
+👉 Runtime pe code modify karna
+👉 Runtime par existing code ko modify karna
+➡️ bina original source code change kiye
+---
+
 # -------------#----------------#------------------OPPOS------------Object-Oriented Programming (System) ------#---------#
 # 1️⃣ Class :- Class ek blueprint hai jisse objects create kiye jate hai. Class ke andar attributes (variables) aur methods (functions) define kiye jate hai.
 
