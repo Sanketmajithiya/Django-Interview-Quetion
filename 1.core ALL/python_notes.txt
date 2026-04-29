@@ -1,3 +1,6 @@
+Also Interview **quetions hear:- Location on Git--> API-CRUD-Generics-and-Function-Based-Views-Intervew/resume-based-interview-qa/README.md
+
+
 INDEX:- 1.core python  2.OPPOS  3.API Related quetions (550 lines start)
 
 #----------------#-------------------#--------------------#-------------------#-------------------#----------------
