@@ -485,7 +485,8 @@ Saare matching patterns ki list return karta hai
 4️⃣ re.sub()
 String me pattern ko replace karta hai
 
-Interview Realted-quetions:- 
+# -------------- #------------------ Interview Realted-quetions ----------------------#------------#------------ 
+#  Interview Realted-quetions Remaing  
 1. Deep vs Shallow copy
 
 👉 Shallow = reference copy 👉 Sirf outer object copy hota hai
