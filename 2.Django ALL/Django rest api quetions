@@ -54,7 +54,7 @@ list
 
 ---
 # 7. What is status code?
-👉 HTTP response codes (200, 201, 400, 404, etc.)
+👉 HTTP response codes (200 success, 201 created, 400 bad request, 401 unauthorized, 404 not found, 500 server error etc.)
 
 Just for knowledge:- HTTP(Hypertext Transfer Protocol)
 ---
