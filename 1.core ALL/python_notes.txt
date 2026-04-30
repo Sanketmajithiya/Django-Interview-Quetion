@@ -722,10 +722,13 @@ Project B → Django 5 chahiye
 👉 Runtime par existing code ko modify karna
 ➡️ bina original source code change kiye
 ---
- # middle where in Django 
-it a class in django cilent sab se pehle hamari web site pe aaye ga request daale direct Django server par jaayegi fir waha se view ko call nahi  hoga direct bich me middlewhere aaye ga ager valid hai to hi aage jaane dega varna mana kar dega aage jaane se 
-setting.py middlewhere me se hum changes yaa delete kare to hamare project me bhi woh chiz work nahi karegi 
-Authentication,timezone,csrf_token,forgotpassword and all etc..... 
+ # middleware in Django 
+👉 Request aur response ke beech ka processing layer
+it a class in django client sab se pehle hamari web site pe aaye ga Then Woh request send karega direct Django server par jaayegi fir waha se view ko call nahi  hoga direct bich me middleware aaye ga ager valid hai to hi aage jaane dega varna mana kar dega aage jaane se. Middleware request ko modify, validate ya block bhi kar sakta hai.
+setting.py middleware me se hum changes yaa delete kare to hamare project me bhi woh chiz work nahi karegi 
+Authentication,timezone,csrf_token,forgotpassword and all etc Midleeware..   
+
+- middleware request modify kar sakta hai request ko validate kar sakta hai or kuch cases me block bhi kar sakta hai jese Authentication logging yaa Errror handling or ager middleware naa hoto har Root pr wahi validation baar baar likh ni padegi joki bewkoofi wali codding hai.ger middleware kaa use naa kare to... 
 
 # -------------#----------------#------------------OPPOS------------Object-Oriented Programming (System) ------#---------#
 # 1️⃣ Class :- Class ek blueprint hai jisse objects create kiye jate hai. Class ke andar attributes (variables) aur methods (functions) define kiye jate hai.
